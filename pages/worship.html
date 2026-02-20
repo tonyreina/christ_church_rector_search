@@ -1,0 +1,307 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Worship • Rector Search</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <meta name="description" content="Parish profile and rector search information." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Montserrat:wght@300;400;500;600&display=swap"
+    rel="stylesheet">
+
+  <style>
+    :root {
+      --cream: #f6f1e8;
+      --ink: #1a1a1a;
+      --muted: #5a5a5a;
+      --sage: #2f4a3d;
+      --sage-2: #3d5f4e;
+      --paper: #ffffff;
+      --line: rgba(26, 26, 26, .12);
+    }
+
+    html,
+    body {
+      height: 100%;
+    }
+
+    body {
+      font-family: 'Montserrat', system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+      background: var(--cream);
+      color: var(--ink);
+    }
+
+    h1,
+    h2,
+    h3,
+    h4 {
+      font-family: 'Cormorant Garamond', Georgia, serif;
+      letter-spacing: .2px;
+    }
+
+    .cc-shell {
+      max-width: 1180px;
+      margin: 0 auto;
+      padding: 0 18px;
+    }
+
+    .cc-topbar {
+      background: rgba(246, 241, 232, .86);
+      backdrop-filter: blur(10px);
+      border-bottom: 1px solid var(--line);
+    }
+
+    .cc-nav a {
+      border-radius: 999px;
+      padding: 10px 14px;
+      font-size: 13px;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+    }
+
+    .cc-nav a:hover {
+      background: rgba(26, 26, 26, .06);
+    }
+
+    .cc-nav a.is-active {
+      background: var(--sage);
+      color: #fff;
+    }
+
+    .cc-btn {
+      display: inline-block;
+      border-radius: 999px;
+      padding: 12px 18px;
+      font-size: 13px;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+      border: 1px solid var(--line);
+      background: transparent;
+    }
+
+    .cc-btn:hover {
+      background: rgba(26, 26, 26, .06);
+    }
+
+    .cc-btn.primary {
+      background: var(--sage);
+      color: #fff;
+      border-color: transparent;
+    }
+
+    .cc-btn.primary:hover {
+      background: var(--sage-2);
+    }
+
+    .cc-hero {
+      padding: 54px 0 28px;
+    }
+
+    .cc-kicker {
+      font-size: 12px;
+      letter-spacing: .22em;
+      text-transform: uppercase;
+      color: var(--muted);
+    }
+
+    .cc-title {
+      font-size: clamp(44px, 5vw, 72px);
+      line-height: .95;
+      margin-top: 10px;
+    }
+
+    .cc-sub {
+      max-width: 820px;
+      color: var(--muted);
+      line-height: 1.8;
+      margin-top: 14px;
+      font-size: 16px;
+    }
+
+    .cc-panel {
+      background: var(--paper);
+      border: 1px solid var(--line);
+      border-radius: 28px;
+      box-shadow: 0 10px 30px rgba(26, 26, 26, .06);
+    }
+
+    .cc-content {
+      padding: 28px 28px;
+    }
+
+    @media (min-width: 768px) {
+      .cc-content {
+        padding: 42px 46px;
+      }
+    }
+
+    .cc-divider {
+      height: 1px;
+      background: var(--line);
+      margin: 18px 0;
+    }
+
+    .cc-footer {
+      border-top: 1px solid var(--line);
+      background: rgba(255, 255, 255, .55);
+    }
+
+    .cc-card {
+      background: rgba(255, 255, 255, .75);
+      border: 1px solid var(--line);
+      border-radius: 26px;
+    }
+
+    .cc-callout {
+      background: rgba(255, 255, 255, .55);
+      border: 1px solid var(--line);
+      border-radius: 26px;
+    }
+  </style>
+
+</head>
+
+<body>
+  <header class="sticky top-0 z-50 cc-topbar">
+    <div class="cc-shell py-4 flex items-center justify-between gap-4">
+      <a href="../index.html" class="flex items-center gap-3">
+        <img src="../assets/logo.png" alt="Christ Church Coronado logo"
+          class="h-10 w-10 rounded-2xl object-contain bg-white border border-slate-200 p-1" />
+        <div class="leading-tight">
+          <div class="font-semibold">Christ Church</div>
+          <div class="text-sm text-[var(--muted)]">Rector Search • Coronado, CA</div>
+          <div class="text-xs text-[var(--muted)]">1114 Ninth Street, Coronado, CA 92118 • (619) 435-4561</div>
+        </div>
+      </a>
+
+      <button id="menuBtn" class="md:hidden cc-btn">Menu</button>
+
+      <nav class="hidden md:flex items-center gap-1 cc-nav">
+        <a class="" href="../index.html">Welcome</a>
+        <a class="is-active" href="worship.html">Worship</a>
+        <a class="" href="youth_family.html">Youth & Family</a>
+        <a class="" href="service_ministry.html">Service Ministry</a>
+        <a class="" href="day_school.html">Christ Church Day School</a>
+        <a class="" href="thrift_shop.html">Thrift Shop</a>
+        <a class="" href="music_liturgy.html">Choir & Altar Guild</a>
+
+      </nav>
+    </div>
+
+    <div id="mobileNav" class="md:hidden hidden border-t border-[var(--line)] bg-[rgba(246,241,232,.96)]">
+      <div class="cc-shell py-3 flex flex-col gap-2 cc-nav">
+        <a class="" href="../index.html">Welcome</a>
+        <a class="is-active" href="worship.html">Worship</a>
+        <a class="" href="youth_family.html">Youth & Family</a>
+        <a class="" href="service_ministry.html">Service Ministry</a>
+        <a class="" href="day_school.html">Christ Church Day School</a>
+        <a class="" href="thrift_shop.html">Thrift Shop</a>
+        <a class="" href="music_liturgy.html">Choir & Altar Guild</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="cc-shell py-10">
+
+    <section class="mb-6 overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-sm">
+      <div class="grid md:grid-cols-5">
+        <div class="md:col-span-3 relative">
+          <img src="../assets/worship_congregation.jpg" alt="Worship at Christ Church Coronado"
+            class="h-72 md:h-full w-full object-cover" />
+          <div class="absolute inset-0 bg-gradient-to-r from-black/55 via-black/25 to-transparent"></div>
+          <div class="absolute left-6 bottom-6 right-6">
+            <div class="text-white text-sm uppercase tracking-wide">Bridging Love &amp; Service</div>
+            <h1 class="text-white text-3xl md:text-4xl font-semibold tracking-tight mt-2">Rector Search</h1>
+            <p class="text-white/90 mt-2 max-w-xl">
+              Christ Episcopal Church in Coronado, California — a vibrant worshipping community shaped by prayer,
+              fellowship, and service.
+            </p>
+          </div>
+        </div>
+        <div class="md:col-span-2 p-6 md:p-8">
+          <div class="text-sm uppercase tracking-wide text-[var(--muted)]">Visit us</div>
+          <div class="mt-2 font-semibold text-[var(--ink)]">Sundays at 10:00 AM</div>
+          <div class="text-[var(--muted)] mt-1">Holy Eucharist • All are welcome</div>
+          <div class="mt-4 rounded-2xl border border-slate-200 bg-slate-50 p-4">
+            <div class="text-[var(--ink)] font-medium">1114 Ninth Street</div>
+            <div class="text-[var(--muted)]">Coronado, CA 92118</div>
+            <div class="text-[var(--muted)]">(619) 435-4561</div>
+          </div>
+          <div class="mt-5 flex flex-wrap gap-2">
+            <a class="rounded-xl border border-slate-200 px-4 py-2 hover:bg-slate-100" href="worship.html">Worship</a>
+            <a class="rounded-xl border border-slate-200 px-4 py-2 hover:bg-slate-100"
+              href="https://christchurchcoronado.org/live-stream" target="_blank" rel="noreferrer">Live Stream</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="cc-panel cc-content">
+      <p class="text-[var(--muted)] leading-relaxed mt-3">Welcome to Christ Church Coronado. We are a friendly,
+        inclusive community where everyone is invited to worship and grow in faith.</p>
+      <p class="text-[var(--muted)] leading-relaxed mt-3">All are welcome at Christ's table. Whether you are new,
+        returning, or seeking, you are invited to join us.</p>
+      <p class="text-[var(--muted)] leading-relaxed mt-3">Weekly Worship Schedule:</p>
+      <ul class="text-[var(--muted)] leading-relaxed mt-3 list-disc ml-6">
+        <li>Sunday 8:00 am – Holy Eucharist (Rite I)</li>
+        <li>Sunday 10:00 am – Holy Eucharist (Rite II, choir & organ)</li>
+        <li>Tuesday 8:00 am – Holy Eucharist (Rite II, Day School Chapel)</li>
+        <li>Thursday 8:00 am – Morning Prayer (with Class Chaplains)</li>
+        <li>Wednesday 5:30 pm – Evening Prayer (lay led)</li>
+      </ul>
+      <p class="text-[var(--muted)] leading-relaxed mt-3">Most of our members value our traditional faith, but some
+        would like more variety in worship, prayers, and music.</p>
+      <div class="mt-10 cc-callout p-6 md:p-7">
+        <div class="text-sm uppercase tracking-wide text-[var(--muted)]">Ministry Profile</div>
+        <h3 class="text-2xl font-semibold tracking-tight mt-2">Worship Style</h3>
+        <p class="text-[var(--muted)] leading-relaxed mt-3">Our worship blends tradition and flexibility. We use Rite I
+          and Rite II, enjoy singing, and offer a mix of musical styles. Services are welcoming and not rigid. We have
+          weekly chapels for our day school and lay-led evening prayer. Many hope to bring back our Thursday healing
+          service.</p>
+      </div>
+
+    </section>
+
+    <section class="mt-10 grid md:grid-cols-3 gap-4">
+      <div class="cc-card p-6">
+        <div class="font-semibold">Our motto</div>
+        <div class="mt-2 text-[var(--muted)]">Bridging Love and Service</div>
+      </div>
+      <div class="cc-card p-6">
+        <div class="font-semibold">Worship</div>
+        <div class="mt-2 text-[var(--muted)]">Rite I & Rite II, with a rich musical life.</div>
+      </div>
+      <div class="cc-card p-6">
+        <div class="font-semibold">In the community</div>
+        <div class="mt-2 text-[var(--muted)]">Service, outreach, and an impactful Thrift Shop ministry.</div>
+      </div>
+      <div class="mt-2 text-xs text-[var(--muted)]">Photo credit: Christ Church Coronado / CCDS websites</div>
+    </section>
+  </main>
+
+  <footer class="cc-footer">
+    <div
+      class="cc-shell py-8 text-sm text-[var(--muted)] flex flex-col md:flex-row items-start md:items-center justify-between gap-3">
+      <div>© 2026 Christ Church • Rector Search</div>
+      <div class="flex gap-4">
+        <a class="hover:underline" href="worship.html">Worship</a>
+        <a class="hover:underline" href="service_ministry.html">Service</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const btn = document.getElementById('menuBtn');
+    const nav = document.getElementById('mobileNav');
+    if (btn && nav) {
+      btn.addEventListener('click', () => nav.classList.toggle('hidden'));
+    }
+  </script>
+</body>
+
+</html>
