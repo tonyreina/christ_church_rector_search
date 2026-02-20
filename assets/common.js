@@ -1,3 +1,50 @@
+// Page configuration data
+const PAGE_CONFIGS = {
+    'index': {
+        title: 'Welcome • Rector Search',
+        heroImage: 'assets/hero_home.jpg',
+        heroAlt: 'Christ Church Coronado',
+        heroDescription: 'Christ Episcopal Church in Coronado, California — a vibrant, worshipping, beachside community shaped by prayer, fellowship, and service.',
+        heroLink: 'https://en.wikipedia.org/wiki/Coronado,_California'
+    },
+    'worship': {
+        title: 'Worship • Rector Search',
+        heroImage: '../assets/worship_congregation.jpg',
+        heroAlt: 'Worship at Christ Church Coronado',
+        heroDescription: 'Christ Episcopal Church in Coronado, California — a vibrant worshipping community shaped by prayer, fellowship, and service.'
+    },
+    'youth_family': {
+        title: 'Youth & Family • Rector Search',
+        heroImage: '../assets/hero_youth.jpg',
+        heroAlt: 'Youth and Family Ministry',
+        heroDescription: 'Christ Episcopal Church in Coronado, California — a vibrant worshipping community shaped by prayer, fellowship, and service.'
+    },
+    'service_ministry': {
+        title: 'Service Ministry • Rector Search',
+        heroImage: '../assets/hero_service.jpg',
+        heroAlt: 'Service Ministry',
+        heroDescription: 'Christ Episcopal Church in Coronado, California — a vibrant worshipping community shaped by prayer, fellowship, and service.'
+    },
+    'day_school': {
+        title: 'Christ Church Day School • Rector Search',
+        heroImage: '../assets/day_school.webp',
+        heroAlt: 'Christ Church Day School',
+        heroDescription: 'Christ Episcopal Church in Coronado, California — a vibrant worshipping community shaped by prayer, fellowship, and service.'
+    },
+    'thrift_shop': {
+        title: 'Thrift Shop • Rector Search',
+        heroImage: '../assets/thrift_shoppers.jpg',
+        heroAlt: 'Christ Church Thrift Shop',
+        heroDescription: 'Christ Episcopal Church in Coronado, California — a vibrant worshipping community shaped by prayer, fellowship, and service.'
+    },
+    'music_liturgy': {
+        title: 'Choir & Altar Guild • Rector Search',
+        heroImage: '../assets/hero_music.jpg',
+        heroAlt: 'Music Ministry',
+        heroDescription: 'Christ Episcopal Church in Coronado, California — a vibrant worshipping community shaped by prayer, fellowship, and service.'
+    }
+};
+
 // Detect if we're on index page or subpage
 function getPageInfo() {
     const path = window.location.pathname;
@@ -15,6 +62,97 @@ function getPageInfo() {
     else if (path.includes('music_liturgy.html')) activePage = 'music_liturgy';
 
     return { isIndex, pathPrefix, pagePathPrefix, activePage };
+}
+
+// Set page title dynamically
+function setPageTitle() {
+    const { activePage } = getPageInfo();
+    const config = PAGE_CONFIGS[activePage];
+    if (config && config.title) {
+        document.title = config.title;
+    }
+}
+
+// Generate hero section
+function generateHeroSection() {
+    const { activePage, pathPrefix, pagePathPrefix } = getPageInfo();
+    const config = PAGE_CONFIGS[activePage];
+    const heroContainer = document.getElementById('heroSection');
+
+    if (!heroContainer || !config) return;
+
+    const descriptionHTML = config.heroLink
+        ? `Christ Episcopal Church in <a href="${config.heroLink}" target="_blank"
+            rel="noopener noreferrer" class="underline hover:text-white transition-colors">Coronado, California</a>
+            — a vibrant, worshipping, beachside community shaped by
+            prayer, fellowship, and service.`
+        : config.heroDescription;
+
+    heroContainer.innerHTML = `
+      <div class="grid md:grid-cols-5">
+        <div class="md:col-span-3 relative">
+          <img src="${config.heroImage}" alt="${config.heroAlt}"
+            class="h-72 md:h-full w-full object-cover parallax-img" loading="eager" />
+          <div class="absolute inset-0 bg-gradient-to-r from-black/55 via-black/25 to-transparent"></div>
+          <div class="absolute left-6 bottom-6 right-6">
+            <div class="text-white text-sm uppercase tracking-wide">Bridging Love &amp; Service</div>
+            <h1 class="text-white text-3xl md:text-4xl font-semibold tracking-tight mt-2">Rector Search</h1>
+            <p class="text-white/90 mt-2 max-w-xl">
+              ${descriptionHTML}
+            </p>
+          </div>
+        </div>
+        <div class="md:col-span-2 p-6 md:p-8">
+          <div class="text-sm uppercase tracking-wide text-[var(--muted)]">Visit us</div>
+          <div class="mt-2 font-semibold text-[var(--ink)]">Sundays at 8 & 10 AM</div>
+          <div class="text-[var(--muted)] mt-1">Holy Eucharist • All are welcome</div>
+          <div class="mt-4 rounded-2xl border border-slate-200 bg-slate-50 p-4">
+            <a href="https://www.google.com/maps/place/1114+Ninth+Street,+Coronado,+CA+92118" target="_blank"
+              rel="noopener noreferrer" class="text-[var(--ink)] font-medium hover:underline">1114 Ninth Street</a>
+            <div class="text-[var(--muted)]">Coronado, CA 92118</div>
+            <a href="tel:+16194354561" class="text-[var(--muted)] hover:underline">(619) 435-4561</a>
+          </div>
+          <div class="mt-5 flex flex-wrap gap-2">
+            <a class="rounded-xl border border-slate-200 px-4 py-2 hover:bg-slate-100"
+              href="${pagePathPrefix}worship.html">Worship</a>
+            <a class="rounded-xl border border-slate-200 px-4 py-2 hover:bg-slate-100"
+              href="https://christchurchcoronado.org/live-stream" target="_blank" rel="noreferrer">Live Stream</a>
+            <a class="rounded-xl border border-slate-200 px-4 py-2 hover:bg-slate-100 flex items-center gap-2"
+              href="https://www.instagram.com/nadochristchurch" target="_blank" rel="noopener noreferrer"
+              aria-label="Instagram">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+              </svg>
+              Instagram
+            </a>
+          </div>
+        </div>
+      </div>
+    `;
+}
+
+// Generate bottom cards section
+function generateBottomCards() {
+    const cardsContainer = document.getElementById('bottomCards');
+    if (!cardsContainer) return;
+
+    cardsContainer.innerHTML = `
+      <div class="cc-card p-6">
+        <div class="font-semibold">Our motto</div>
+        <div class="mt-2 text-[var(--muted)]">Bridging Love and Service</div>
+      </div>
+      <div class="cc-card p-6">
+        <div class="font-semibold">Worship</div>
+        <div class="mt-2 text-[var(--muted)]">Rite I & Rite II, with a rich musical life.</div>
+      </div>
+      <div class="cc-card p-6">
+        <div class="font-semibold">In the community</div>
+        <div class="mt-2 text-[var(--muted)]">Service, outreach, and an impactful ministry.</div>
+      </div>
+    `;
 }
 
 // Generate header HTML
@@ -278,7 +416,14 @@ function animateList() {
 
 // Initialize on load
 window.addEventListener('load', () => {
-    // Generate header, footer, and back-to-top button first
+    // Set page title
+    setPageTitle();
+
+    // Generate hero section and bottom cards
+    generateHeroSection();
+    generateBottomCards();
+
+    // Generate header, footer, and back-to-top button
     generateHeader();
     generateFooter();
     generateBackToTop();
