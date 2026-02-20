@@ -23,6 +23,22 @@
       --sage-2: #3d5f4e;
       --paper: #ffffff;
       --line: rgba(26, 26, 26, .12);
+      --sage-light: #4a6b5a;
+      --transition-smooth: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --cream: #1a1a1a;
+        --ink: #f6f1e8;
+        --muted: #b0b0b0;
+        --paper: #2a2a2a;
+        --line: rgba(246, 241, 232, .18);
+      }
+    }
+
+    * {
+      scroll-behavior: smooth;
     }
 
     html,
@@ -32,8 +48,16 @@
 
     body {
       font-family: 'Montserrat', system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
-      background: var(--cream);
+      background: linear-gradient(to bottom, var(--cream), rgba(246, 241, 232, 0.95));
+      background-attachment: fixed;
       color: var(--ink);
+      transition: background 0.3s var(--transition-smooth), color 0.3s var(--transition-smooth);
+    }
+
+    @media (prefers-color-scheme: dark) {
+      body {
+        background: linear-gradient(to bottom, #1a1a1a, #0f0f0f);
+      }
     }
 
     h1,
@@ -42,6 +66,7 @@
     h4 {
       font-family: 'Cormorant Garamond', Georgia, serif;
       letter-spacing: .2px;
+      text-wrap: balance;
     }
 
     .cc-shell {
@@ -52,8 +77,19 @@
 
     .cc-topbar {
       background: rgba(246, 241, 232, .86);
-      backdrop-filter: blur(10px);
+      backdrop-filter: blur(12px) saturate(180%);
       border-bottom: 1px solid var(--line);
+      transition: all 0.3s var(--transition-smooth);
+    }
+
+    @media (prefers-color-scheme: dark) {
+      .cc-topbar {
+        background: rgba(26, 26, 26, .86);
+      }
+    }
+
+    .cc-topbar.scrolled {
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
     }
 
     .cc-nav a {
@@ -62,15 +98,24 @@
       font-size: 13px;
       letter-spacing: .08em;
       text-transform: uppercase;
+      transition: all 0.3s var(--transition-smooth);
+      position: relative;
     }
 
     .cc-nav a:hover {
       background: rgba(26, 26, 26, .06);
+      transform: translateY(-1px);
+    }
+
+    .cc-nav a:focus-visible {
+      outline: 2px solid var(--sage);
+      outline-offset: 2px;
     }
 
     .cc-nav a.is-active {
       background: var(--sage);
       color: #fff;
+      box-shadow: 0 2px 8px rgba(47, 74, 61, 0.3);
     }
 
     .cc-btn {
@@ -82,10 +127,23 @@
       text-transform: uppercase;
       border: 1px solid var(--line);
       background: transparent;
+      transition: all 0.3s var(--transition-smooth);
+      cursor: pointer;
     }
 
     .cc-btn:hover {
       background: rgba(26, 26, 26, .06);
+      transform: translateY(-1px);
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    .cc-btn:active {
+      transform: translateY(0);
+    }
+
+    .cc-btn:focus-visible {
+      outline: 2px solid var(--sage);
+      outline-offset: 2px;
     }
 
     .cc-btn.primary {
@@ -96,6 +154,7 @@
 
     .cc-btn.primary:hover {
       background: var(--sage-2);
+      box-shadow: 0 6px 16px rgba(47, 74, 61, 0.3);
     }
 
     .cc-hero {
@@ -118,7 +177,7 @@
     .cc-sub {
       max-width: 820px;
       color: var(--muted);
-      line-height: 1.8;
+      line-height: 1.75;
       margin-top: 14px;
       font-size: 16px;
     }
@@ -128,6 +187,14 @@
       border: 1px solid var(--line);
       border-radius: 28px;
       box-shadow: 0 10px 30px rgba(26, 26, 26, .06);
+      transition: all 0.4s var(--transition-smooth);
+      opacity: 0;
+      transform: translateY(20px);
+    }
+
+    .cc-panel.revealed {
+      opacity: 1;
+      transform: translateY(0);
     }
 
     .cc-content {
@@ -155,19 +222,107 @@
       background: rgba(255, 255, 255, .75);
       border: 1px solid var(--line);
       border-radius: 26px;
+      transition: all 0.4s var(--transition-smooth);
+      cursor: pointer;
+    }
+
+    .cc-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 12px 24px rgba(0, 0, 0, 0.12);
+      border-color: var(--sage);
     }
 
     .cc-callout {
       background: rgba(255, 255, 255, .55);
       border: 1px solid var(--line);
       border-radius: 26px;
+      transition: all 0.3s var(--transition-smooth);
+    }
+
+    @media (prefers-color-scheme: dark) {
+      .cc-card {
+        background: rgba(42, 42, 42, .85);
+      }
+
+      .cc-callout {
+        background: rgba(42, 42, 42, .65);
+      }
+    }
+
+    .fade-in {
+      opacity: 0;
+      transform: translateY(30px);
+      transition: opacity 0.6s var(--transition-smooth), transform 0.6s var(--transition-smooth);
+    }
+
+    .fade-in.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .parallax-hero {
+      position: relative;
+      overflow: hidden;
+    }
+
+    .parallax-hero img {
+      transition: transform 0.5s ease-out;
+    }
+
+    .back-to-top {
+      position: fixed;
+      bottom: 30px;
+      right: 30px;
+      width: 50px;
+      height: 50px;
+      background: var(--sage);
+      color: white;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      opacity: 0;
+      visibility: hidden;
+      transition: all 0.3s var(--transition-smooth);
+      z-index: 1000;
+      box-shadow: 0 4px 12px rgba(47, 74, 61, 0.4);
+    }
+
+    .back-to-top.visible {
+      opacity: 1;
+      visibility: visible;
+    }
+
+    .back-to-top:hover {
+      background: var(--sage-2);
+      transform: translateY(-4px);
+      box-shadow: 0 6px 16px rgba(47, 74, 61, 0.5);
+    }
+
+    .scroll-progress {
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: 3px;
+      background: linear-gradient(to right, var(--sage), var(--sage-light));
+      width: 0%;
+      z-index: 9999;
+      transition: width 0.1s ease-out;
+    }
+
+    img {
+      content-visibility: auto;
     }
   </style>
 
 </head>
 
 <body>
-  <header class="sticky top-0 z-50 cc-topbar">
+  <!-- Scroll Progress Indicator -->
+  <div class="scroll-progress" id="scrollProgress"></div>
+
+  <header class="sticky top-0 z-50 cc-topbar" id="header">
     <div class="cc-shell py-4 flex items-center justify-between gap-4">
       <a href="../index.html" class="flex items-center gap-3">
         <img src="../assets/logo.png" alt="Christ Church Coronado logo"
@@ -208,11 +363,12 @@
 
   <main class="cc-shell py-10">
 
-    <section class="mb-6 overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-sm">
+    <section class="mb-6 overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-sm parallax-hero fade-in"
+      id="heroSection">
       <div class="grid md:grid-cols-5">
         <div class="md:col-span-3 relative">
           <img src="../assets/day_school.webp" alt="Christ Church Day School"
-            class="h-72 md:h-full w-full object-cover" />
+            class="h-72 md:h-full w-full object-cover parallax-img" loading="eager" />
           <div class="absolute inset-0 bg-gradient-to-r from-black/55 via-black/25 to-transparent"></div>
           <div class="absolute left-6 bottom-6 right-6">
             <div class="text-white text-sm uppercase tracking-wide">Bridging Love &amp; Service</div>
@@ -241,7 +397,7 @@
       </div>
     </section>
 
-    <section class="cc-panel cc-content">
+    <section class="cc-panel cc-content fade-in">
       <p class="text-[var(--muted)] leading-relaxed mt-3">Christ Church Day School</p>
       <p class="text-[var(--muted)] leading-relaxed mt-3"><a href="https://www.ccds.org/" target="_blank"
           rel="noopener">Christ Church Day School (CCDS)</a> is a vital and important mission of Christ Church. Our
@@ -338,12 +494,134 @@
     </div>
   </footer>
 
+  <!-- Back to Top Button -->
+  <div class="back-to-top" id="backToTop" role="button" tabindex="0" aria-label="Back to top">
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+      stroke-linecap="round" stroke-linejoin="round">
+      <polyline points="18 15 12 9 6 15"></polyline>
+    </svg>
+  </div>
+
   <script>
+    // Mobile menu toggle
     const btn = document.getElementById('menuBtn');
     const nav = document.getElementById('mobileNav');
     if (btn && nav) {
       btn.addEventListener('click', () => nav.classList.toggle('hidden'));
     }
+
+    // Scroll progress indicator
+    const scrollProgress = document.getElementById('scrollProgress');
+    const header = document.getElementById('header');
+
+    function updateScrollProgress() {
+      const winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+      const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+      const scrolled = (winScroll / height) * 100;
+      if (scrollProgress) {
+        scrollProgress.style.width = scrolled + '%';
+      }
+
+      if (header) {
+        if (winScroll > 50) {
+          header.classList.add('scrolled');
+        } else {
+          header.classList.remove('scrolled');
+        }
+      }
+    }
+
+    window.addEventListener('scroll', updateScrollProgress, { passive: true });
+
+    // Back to top button
+    const backToTop = document.getElementById('backToTop');
+
+    function toggleBackToTop() {
+      const scrollPos = window.scrollY || document.documentElement.scrollTop;
+      if (backToTop) {
+        if (scrollPos > 400) {
+          backToTop.classList.add('visible');
+        } else {
+          backToTop.classList.remove('visible');
+        }
+      }
+    }
+
+    window.addEventListener('scroll', toggleBackToTop, { passive: true });
+
+    if (backToTop) {
+      backToTop.addEventListener('click', () => {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      });
+
+      backToTop.addEventListener('keydown', (e) => {
+        if (e.key === 'Enter' || e.key === ' ') {
+          e.preventDefault();
+          window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+      });
+    }
+
+    // Intersection Observer for fade-in animations
+    const observerOptions = {
+      threshold: 0.1,
+      rootMargin: '0px 0px -50px 0px'
+    };
+
+    const fadeInObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    }, observerOptions);
+
+    document.querySelectorAll('.fade-in').forEach(el => {
+      fadeInObserver.observe(el);
+    });
+
+    const panelObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('revealed');
+        }
+      });
+    }, observerOptions);
+
+    document.querySelectorAll('.cc-panel').forEach(el => {
+      panelObserver.observe(el);
+    });
+
+    // Parallax effect for hero image
+    const parallaxImg = document.querySelector('.parallax-img');
+    const heroSection = document.getElementById('heroSection');
+
+    function handleParallax() {
+      if (parallaxImg && heroSection && window.innerWidth >= 768) {
+        const scrolled = window.scrollY;
+        const heroTop = heroSection.offsetTop;
+        const heroHeight = heroSection.offsetHeight;
+
+        if (scrolled < heroTop + heroHeight) {
+          const yPos = (scrolled - heroTop) * 0.3;
+          parallaxImg.style.transform = `translateY(${yPos}px)`;
+        }
+      }
+    }
+
+    window.addEventListener('scroll', handleParallax, { passive: true });
+
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && nav && !nav.classList.contains('hidden')) {
+        nav.classList.add('hidden');
+      }
+    });
+
+    window.addEventListener('load', () => {
+      updateScrollProgress();
+      toggleBackToTop();
+      handleParallax();
+    });
   </script>
 </body>
 
