@@ -337,6 +337,18 @@
     img {
       content-visibility: auto;
     }
+
+    /* Animated list items */
+    .animated-list li {
+      transition: all 0.5s var(--transition-smooth);
+      font-weight: 400;
+    }
+
+    .animated-list li.active {
+      font-weight: 700;
+      color: var(--sage);
+      transform: translateX(4px);
+    }
   </style>
 
 </head>
@@ -515,12 +527,13 @@ WITH the section below (same classes, better formatting) -->
         <div class="mt-2">
           <div class="text-sm uppercase tracking-wide text-[var(--muted)] font-semibold">Our hopes for our next rector
           </div>
-          <ul class="mt-3 space-y-2 list-disc pl-5">
-            <li class="font-medium">Grow our youth and family ministry</li>
+          <ul class="mt-3 space-y-2 list-disc pl-5 animated-list" id="rector-hopes">
+            <li>Grow our youth and family ministry</li>
             <li>Welcome new members and deepen faith</li>
             <li>Support small groups and learning</li>
             <li>Offer caring support in all seasons</li>
             <li>Lead us in service and outreach</li>
+            <li>Provide faithful stewardship and care</li>
           </ul>
         </div>
         <p>
@@ -765,11 +778,38 @@ WITH the section below (same classes, better formatting) -->
       }, { once: true });
     });
 
+    // Animated list cycling
+    function animateList() {
+      const list = document.getElementById('rector-hopes');
+      if (!list) return;
+
+      const items = list.querySelectorAll('li');
+      let currentIndex = 0;
+
+      function highlightNext() {
+        // Remove active class from all items
+        items.forEach(item => item.classList.remove('active'));
+
+        // Add active class to current item
+        items[currentIndex].classList.add('active');
+
+        // Move to next item
+        currentIndex = (currentIndex + 1) % items.length;
+      }
+
+      // Start with first item
+      highlightNext();
+
+      // Cycle every 2.5 seconds
+      setInterval(highlightNext, 2500);
+    }
+
     // Initialize on load
     window.addEventListener('load', () => {
       updateScrollProgress();
       toggleBackToTop();
       handleParallax();
+      animateList();
     });
   </script>
 </body>
