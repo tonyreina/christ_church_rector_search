@@ -20,50 +20,7 @@
 </head>
 
 <body>
-  <!-- Scroll Progress Indicator -->
-  <div class="scroll-progress" id="scrollProgress"></div>
-
-  <header class="sticky top-0 z-50 cc-topbar" id="header">
-    <div class="cc-shell py-4 flex items-center justify-between gap-4">
-      <a href="../index.html" class="flex items-center gap-3">
-        <img src="../assets/logo.png" alt="Christ Church Coronado logo"
-          class="h-10 w-10 rounded-2xl object-contain bg-white border border-slate-200 p-1" />
-        <div class="leading-tight">
-          <div class="font-semibold">Christ Church</div>
-          <div class="text-sm text-[var(--muted)]">Rector Search • Coronado, CA</div>
-          <div class="text-xs text-[var(--muted)]"><a
-              href="https://www.google.com/maps/place/1114+Ninth+Street,+Coronado,+CA+92118" target="_blank"
-              rel="noopener noreferrer" class="hover:underline">1114 Ninth Street, Coronado, CA 92118</a> • <a
-              href="tel:+16194354561" class="hover:underline">(619) 435-4561</a></div>
-        </div>
-      </a>
-
-      <button id="menuBtn" class="md:hidden cc-btn">Menu</button>
-
-      <nav class="hidden md:flex items-center gap-1 cc-nav">
-        <a class="" href="../index.html">Welcome</a>
-        <a class="is-active" href="worship.html">Worship</a>
-        <a class="" href="youth_family.html">Youth & Family</a>
-        <a class="" href="service_ministry.html">Service Ministry</a>
-        <a class="" href="day_school.html">Christ Church Day School</a>
-        <a class="" href="thrift_shop.html">Thrift Shop</a>
-        <a class="" href="music_liturgy.html">Choir & Altar Guild</a>
-
-      </nav>
-    </div>
-
-    <div id="mobileNav" class="md:hidden hidden border-t border-[var(--line)] bg-[rgba(246,241,232,.96)]">
-      <div class="cc-shell py-3 flex flex-col gap-2 cc-nav">
-        <a class="" href="../index.html">Welcome</a>
-        <a class="is-active" href="worship.html">Worship</a>
-        <a class="" href="youth_family.html">Youth & Family</a>
-        <a class="" href="service_ministry.html">Service Ministry</a>
-        <a class="" href="day_school.html">Christ Church Day School</a>
-        <a class="" href="thrift_shop.html">Thrift Shop</a>
-        <a class="" href="music_liturgy.html">Choir & Altar Guild</a>
-      </div>
-    </div>
-  </header>
+  <header id="siteHeader"></header>
 
   <main class="cc-shell py-10">
 
@@ -160,26 +117,9 @@
 
 
 
-  <footer class="cc-footer">
-    <div
-      class="cc-shell py-8 text-sm text-[var(--muted)] flex flex-col md:flex-row items-start md:items-center justify-between gap-3">
-      <div>© 2026 Christ Church • Rector Search</div>
-      <div class="flex gap-4">
-        <a class="hover:underline" href="worship.html">Worship</a>
-        <a class="hover:underline" href="service_ministry.html">Service</a>
-        <a class="hover:underline" href="https://www.instagram.com/nadochristchurch" target="_blank"
-          rel="noopener noreferrer">Instagram</a>
-      </div>
-    </div>
-  </footer>
+  <footer id="siteFooter" class="cc-footer"></footer>
 
-  <!-- Back to Top Button -->
-  <div class="back-to-top" id="backToTop" role="button" tabindex="0" aria-label="Back to top">
-    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-      stroke-linecap="round" stroke-linejoin="round">
-      <polyline points="18 15 12 9 6 15"></polyline>
-    </svg>
-  </div>
+  <div class="back-to-top" id="backToTopBtn" role="button" tabindex="0" aria-label="Back to top"></div>
 
   <script src="../assets/common.js"></script>
   <script src="../assets/ministry-profile.js"></script>
