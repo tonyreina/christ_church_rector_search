@@ -248,75 +248,79 @@
         background: rgba(42, 42, 42, .65);
       }
     }
+
+    /* Fade-in animation */
+    .fade-in {
+      opacity: 0;
+      transform: translateY(30px);
+      transition: opacity 0.6s var(--transition-smooth), transform 0.6s var(--transition-smooth);
+    }
+
+    .fade-in.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    /* Parallax hero */
+    .parallax-hero {
+      position: relative;
+      overflow: hidden;
+    }
+
+    .parallax-hero img {
+      transition: transform 0.5s ease-out;
+    }
+
+    /* Back to top button */
+    .back-to-top {
+      position: fixed;
+      bottom: 30px;
+      right: 30px;
+      width: 50px;
+      height: 50px;
+      background: var(--sage);
+      color: white;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      opacity: 0;
+      visibility: hidden;
+      transition: all 0.3s var(--transition-smooth);
+      z-index: 1000;
+      box-shadow: 0 4px 12px rgba(47, 74, 61, 0.4);
+    }
+
+    .back-to-top.visible {
+      opacity: 1;
+      visibility: visible;
+    }
+
+    .back-to-top:hover {
+      background: var(--sage-2);
+      transform: translateY(-4px);
+      box-shadow: 0 6px 16px rgba(47, 74, 61, 0.5);
+    }
+
+    /* Scroll progress indicator */
+    .scroll-progress {
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: 3px;
+      background: linear-gradient(to right, var(--sage), var(--sage-light));
+      width: 0%;
+      z-index: 9999;
+      transition: width 0.1s ease-out;
+    }
+
+    /* Loading optimization */
+    img {
+      content-visibility: auto;
+    }
   </style>
   <link rel="stylesheet" href="../assets/ministry-profile.css">
-
-</head>
-opacity: 0;
-transform: translateY(30px);
-transition: opacity 0.6s var(--transition-smooth), transform 0.6s var(--transition-smooth);
-}
-
-.fade-in.visible {
-opacity: 1;
-transform: translateY(0);
-}
-
-.parallax-hero {
-position: relative;
-overflow: hidden;
-}
-
-.parallax-hero img {
-transition: transform 0.5s ease-out;
-}
-
-.back-to-top {
-position: fixed;
-bottom: 30px;
-right: 30px;
-width: 50px;
-height: 50px;
-background: var(--sage);
-color: white;
-border-radius: 50%;
-display: flex;
-align-items: center;
-justify-content: center;
-cursor: pointer;
-opacity: 0;
-visibility: hidden;
-transition: all 0.3s var(--transition-smooth);
-z-index: 1000;
-box-shadow: 0 4px 12px rgba(47, 74, 61, 0.4);
-}
-
-.back-to-top.visible {
-opacity: 1;
-visibility: visible;
-}
-
-.back-to-top:hover {
-background: var(--sage-2);
-transform: translateY(-4px);
-box-shadow: 0 6px 16px rgba(47, 74, 61, 0.5);
-}
-
-.scroll-progress {
-position: fixed;
-top: 0;
-left: 0;
-height: 3px;
-background: linear-gradient(to right, var(--sage), var(--sage-light));
-width: 0%;
-z-index: 9999;
-transition: width 0.1s ease-out;
-}
-
-img {
-content-visibility: auto;
-}
-</style>
 
 </head>
 
@@ -398,6 +402,17 @@ content-visibility: auto;
             <a class="rounded-xl border border-slate-200 px-4 py-2 hover:bg-slate-100" href="worship.html">Worship</a>
             <a class="rounded-xl border border-slate-200 px-4 py-2 hover:bg-slate-100"
               href="https://christchurchcoronado.org/live-stream" target="_blank" rel="noreferrer">Live Stream</a>
+            <a class="rounded-xl border border-slate-200 px-4 py-2 hover:bg-slate-100 flex items-center gap-2"
+              href="https://www.instagram.com/nadochristchurch" target="_blank" rel="noopener noreferrer"
+              aria-label="Instagram">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+              </svg>
+              Instagram
+            </a>
           </div>
         </div>
       </div>
@@ -503,6 +518,8 @@ content-visibility: auto;
       <div class="flex gap-4">
         <a class="hover:underline" href="worship.html">Worship</a>
         <a class="hover:underline" href="service_ministry.html">Service</a>
+        <a class="hover:underline" href="https://www.instagram.com/nadochristchurch" target="_blank"
+          rel="noopener noreferrer">Instagram</a>
       </div>
     </div>
   </footer>
