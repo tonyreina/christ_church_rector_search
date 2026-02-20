@@ -27,7 +27,7 @@ const PAGE_CONFIGS = {
     },
     'day_school': {
         title: 'Christ Church Day School • Rector Search',
-        heroImage: '../assets/day_school.webp',
+        heroImage: '../assets/hero_school.webp',
         heroAlt: 'Christ Church Day School',
         heroDescription: 'Christ Episcopal Church in Coronado, California — a vibrant worshipping community shaped by prayer, fellowship, and service.'
     },
@@ -367,17 +367,8 @@ function handleParallax() {
 
 window.addEventListener('scroll', handleParallax, { passive: true });
 
-// Improve focus visibility for accessibility
-document.addEventListener('mousedown', () => {
-    document.body.classList.add('using-mouse');
-});
-
+// Allow escape to close mobile menu
 document.addEventListener('keydown', (e) => {
-    if (e.key === 'Tab') {
-        document.body.classList.remove('using-mouse');
-    }
-
-    // Allow escape to close mobile menu
     if (e.key === 'Escape') {
         const nav = document.getElementById('mobileNav');
         if (nav && !nav.classList.contains('hidden')) {

@@ -140,21 +140,11 @@ h4 {
     box-shadow: 0 6px 16px rgba(47, 74, 61, 0.3);
 }
 
-.cc-hero {
-    padding: 54px 0 28px;
-}
-
 .cc-kicker {
     font-size: 12px;
     letter-spacing: .22em;
     text-transform: uppercase;
     color: var(--muted);
-}
-
-.cc-title {
-    font-size: clamp(44px, 5vw, 72px);
-    line-height: .95;
-    margin-top: 10px;
 }
 
 .cc-sub {
@@ -188,12 +178,6 @@ h4 {
     .cc-content {
         padding: 42px 46px;
     }
-}
-
-.cc-divider {
-    height: 1px;
-    background: var(--line);
-    margin: 18px 0;
 }
 
 .cc-footer {
