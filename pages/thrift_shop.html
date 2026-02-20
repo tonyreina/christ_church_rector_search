@@ -248,73 +248,75 @@
         background: rgba(42, 42, 42, .65);
       }
     }
-
-    .fade-in {
-      opacity: 0;
-      transform: translateY(30px);
-      transition: opacity 0.6s var(--transition-smooth), transform 0.6s var(--transition-smooth);
-    }
-
-    .fade-in.visible {
-      opacity: 1;
-      transform: translateY(0);
-    }
-
-    .parallax-hero {
-      position: relative;
-      overflow: hidden;
-    }
-
-    .parallax-hero img {
-      transition: transform 0.5s ease-out;
-    }
-
-    .back-to-top {
-      position: fixed;
-      bottom: 30px;
-      right: 30px;
-      width: 50px;
-      height: 50px;
-      background: var(--sage);
-      color: white;
-      border-radius: 50%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      cursor: pointer;
-      opacity: 0;
-      visibility: hidden;
-      transition: all 0.3s var(--transition-smooth);
-      z-index: 1000;
-      box-shadow: 0 4px 12px rgba(47, 74, 61, 0.4);
-    }
-
-    .back-to-top.visible {
-      opacity: 1;
-      visibility: visible;
-    }
-
-    .back-to-top:hover {
-      background: var(--sage-2);
-      transform: translateY(-4px);
-      box-shadow: 0 6px 16px rgba(47, 74, 61, 0.5);
-    }
-
-    .scroll-progress {
-      position: fixed;
-      top: 0;
-      left: 0;
-      height: 3px;
-      background: linear-gradient(to right, var(--sage), var(--sage-light));
-      width: 0%;
-      z-index: 9999;
-      transition: width 0.1s ease-out;
-    }
-
-    img {
-      content-visibility: auto;
-    }
   </style>
+  <link rel="stylesheet" href="../assets/ministry-profile.css">
+
+</head>
+opacity: 0;
+transform: translateY(30px);
+transition: opacity 0.6s var(--transition-smooth), transform 0.6s var(--transition-smooth);
+}
+
+.fade-in.visible {
+opacity: 1;
+transform: translateY(0);
+}
+
+.parallax-hero {
+position: relative;
+overflow: hidden;
+}
+
+.parallax-hero img {
+transition: transform 0.5s ease-out;
+}
+
+.back-to-top {
+position: fixed;
+bottom: 30px;
+right: 30px;
+width: 50px;
+height: 50px;
+background: var(--sage);
+color: white;
+border-radius: 50%;
+display: flex;
+align-items: center;
+justify-content: center;
+cursor: pointer;
+opacity: 0;
+visibility: hidden;
+transition: all 0.3s var(--transition-smooth);
+z-index: 1000;
+box-shadow: 0 4px 12px rgba(47, 74, 61, 0.4);
+}
+
+.back-to-top.visible {
+opacity: 1;
+visibility: visible;
+}
+
+.back-to-top:hover {
+background: var(--sage-2);
+transform: translateY(-4px);
+box-shadow: 0 6px 16px rgba(47, 74, 61, 0.5);
+}
+
+.scroll-progress {
+position: fixed;
+top: 0;
+left: 0;
+height: 3px;
+background: linear-gradient(to right, var(--sage), var(--sage-light));
+width: 0%;
+z-index: 9999;
+transition: width 0.1s ease-out;
+}
+
+img {
+content-visibility: auto;
+}
+</style>
 
 </head>
 
@@ -384,7 +386,7 @@
         </div>
         <div class="md:col-span-2 p-6 md:p-8">
           <div class="text-sm uppercase tracking-wide text-[var(--muted)]">Visit us</div>
-          <div class="mt-2 font-semibold text-[var(--ink)]">Sundays at 10:00 AM</div>
+          <div class="mt-2 font-semibold text-[var(--ink)]">Sundays at 8 & 10 AM</div>
           <div class="text-[var(--muted)] mt-1">Holy Eucharist • All are welcome</div>
           <div class="mt-4 rounded-2xl border border-slate-200 bg-slate-50 p-4">
             <a href="https://www.google.com/maps/place/1114+Ninth+Street,+Coronado,+CA+92118" target="_blank"
@@ -423,39 +425,51 @@
         donations on Tuesday through Saturday, 10 am to 1pm.</p>
       <p class="text-[var(--muted)] leading-relaxed mt-3">The Thrift Shop embodies our call to service in tangible,
         practical ways, connecting commerce with compassion and stewardship with generosity.</p>
-      <div class="mt-10 cc-callout p-6 md:p-7">
-        <div class="text-sm uppercase tracking-wide text-[var(--muted)]">From our Ministry Profile</div>
-        <h3 class="text-2xl font-semibold tracking-tight mt-2">A community ministry with broad impact</h3>
-        <p class="text-[var(--muted)] leading-relaxed mt-3">We invite everyone to share in ministry as we seek to be
-          Christ’s “hands and feet” in the world. Parishioners serve our neighbors through outreach that meets real
-          needs with dignity and care. We support St. Mark’s kitchen and prepare “Blessings in a Bag” with snacks,
-          water, and handmade hats, gloves, or scarves to offer those living on the streets. These remind our neighbors
-          that they are seen and loved by God the Father, Son, and Spirit.<br>We also create space for prayer and
-          belonging. Our mid-week, lay-led Evening Prayer service is intentionally welcoming and nonjudgmental, with
-          opportunities for people to speak names and concerns aloud. In seasons like Lent, we gather for Stations of
-          the Cross and a lecture series, sharing a simple meal and deepening fellowship.<br>Our congregation
-          participates in the San Diego Pride celebration alongside others in the Diocese, praying at the Cathedral and
-          witnessing to God’s inclusive love. We support Vida Joven orphanages in Mexico through fundraising that helps
-          provide food and care. Through our Peace and Justice Ministry, we educate ourselves about suffering at the
-          border and offer prayerful presence for those facing immigration court proceedings, standing as compassionate
-          witnesses and reminding people they are not alone.<br>Our volunteer-run Thrift Shop is another vital ministry.
-          It offers affordable clothing and household goods to the larger community while generating annual support for
-          staff, parish ministries, local organizations, and scholarships. It is entirely staffed by volunteers and is
-          known as a place of warmth, generosity, and good humor.</p>
-      </div>
 
-      <div class="mt-10 cc-callout p-6 md:p-7">
-        <div class="text-sm uppercase tracking-wide text-[var(--muted)]">From our Ministry Profile</div>
-        <h3 class="text-2xl font-semibold tracking-tight mt-2">Stewardship and outreach</h3>
-        <p class="text-[var(--muted)] leading-relaxed mt-3">We hope to call a leader who embodies Christ’s love with
-          humility, compassion, and spiritual depth. Essential gifts include strong pastoral presence, excellent
-          liturgical leadership, and preaching that connects the Gospel to everyday life with warmth and clarity. We
-          value someone who helps newcomers feel truly welcome and who nurtures long-time members with care, especially
-          in seasons of joy, grief, and transition. We also need a collaborative leader who listens well, builds trust,
-          and works closely with vestry, lay leaders, and staff. Administrative skill and wise stewardship are
-          essential, as does adaptability in a changing Church. Above all, we seek a rector grounded in prayer and
-          emotional maturity. We need someone who will help us grow as a supportive community led by the Holy Spirit and
-          rooted in faith, hope, and love.</p>
+      <div id="ministry-profile-container" class="mt-10">
+        <div class="ministry-profile-item active cc-callout p-6 md:p-7">
+          <div class="text-sm uppercase tracking-wide text-[var(--muted)]">From our Ministry Profile</div>
+          <h3 class="text-2xl font-semibold tracking-tight mt-2">A community ministry with broad impact</h3>
+          <p class="text-[var(--muted)] leading-relaxed mt-3">We invite everyone to share in ministry as we seek to be
+            Christ’s “hands and feet” in the world. Parishioners serve our neighbors through outreach that meets real
+            needs with dignity and care. We support St. Mark’s kitchen and prepare “Blessings in a Bag” with snacks,
+            water, and handmade hats, gloves, or scarves to offer those living on the streets. These remind our
+            neighbors
+            that they are seen and loved by God the Father, Son, and Spirit.<br>We also create space for prayer and
+            belonging. Our mid-week, lay-led Evening Prayer service is intentionally welcoming and nonjudgmental, with
+            opportunities for people to speak names and concerns aloud. In seasons like Lent, we gather for Stations of
+            the Cross and a lecture series, sharing a simple meal and deepening fellowship.<br>Our congregation
+            participates in the San Diego Pride celebration alongside others in the Diocese, praying at the Cathedral
+            and
+            witnessing to God’s inclusive love. We support Vida Joven orphanages in Mexico through fundraising that
+            helps
+            provide food and care. Through our Peace and Justice Ministry, we educate ourselves about suffering at the
+            border and offer prayerful presence for those facing immigration court proceedings, standing as
+            compassionate
+            witnesses and reminding people they are not alone.<br>Our volunteer-run Thrift Shop is another vital
+            ministry.
+            It offers affordable clothing and household goods to the larger community while generating annual support
+            for
+            staff, parish ministries, local organizations, and scholarships. It is entirely staffed by volunteers and is
+            known as a place of warmth, generosity, and good humor.</p>
+        </div>
+
+        <div class="ministry-profile-item cc-callout p-6 md:p-7">
+          <div class="text-sm uppercase tracking-wide text-[var(--muted)]">From our Ministry Profile</div>
+          <h3 class="text-2xl font-semibold tracking-tight mt-2">Stewardship and outreach</h3>
+          <p class="text-[var(--muted)] leading-relaxed mt-3">We hope to call a leader who embodies Christ’s love with
+            humility, compassion, and spiritual depth. Essential gifts include strong pastoral presence, excellent
+            liturgical leadership, and preaching that connects the Gospel to everyday life with warmth and clarity. We
+            value someone who helps newcomers feel truly welcome and who nurtures long-time members with care,
+            especially
+            in seasons of joy, grief, and transition. We also need a collaborative leader who listens well, builds
+            trust,
+            and works closely with vestry, lay leaders, and staff. Administrative skill and wise stewardship are
+            essential, as does adaptability in a changing Church. Above all, we seek a rector grounded in prayer and
+            emotional maturity. We need someone who will help us grow as a supportive community led by the Holy Spirit
+            and
+            rooted in faith, hope, and love.</p>
+        </div>
       </div>
 
     </section>
@@ -620,8 +634,10 @@
       updateScrollProgress();
       toggleBackToTop();
       handleParallax();
+      rotateMinistryProfile();
     });
   </script>
+  <script src="../assets/ministry-profile.js"></script>
 </body>
 
 </html>
