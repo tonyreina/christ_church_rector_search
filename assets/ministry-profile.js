@@ -82,7 +82,7 @@ function generateMinistryProfileItems() {
             title: "Peace & Justice ministry",
             pages: ['service_ministry'],
             content: `
-                We stay connected and engaged through our weekly newsletter, Grace Notes, which highlights opportunities to 
+                We stay connected and engaged through our weekly newsletter, <a href="https://christchurchcoronado.org/news-and-events" target="_blank">Grace Notes</a>, which highlights opportunities to 
                 serve in the wider community. In addition, our Peace &amp; Justice Committee supports education and advocacy 
                 on issues such as housing, ocean pollution, immigration, and LGBTQ protections and rights, helping us 
                 respond thoughtfully and faithfully to our neighbors' needs.

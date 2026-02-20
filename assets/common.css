@@ -250,10 +250,20 @@ h4 {
 .parallax-hero {
     position: relative;
     overflow: hidden;
+    height: 400px;
+}
+
+@media (min-width: 768px) {
+    .parallax-hero {
+        height: 480px;
+    }
 }
 
 .parallax-hero img {
     transition: transform 0.5s ease-out;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 /* Back to top button */

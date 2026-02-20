@@ -88,13 +88,19 @@ function generateHeroSection() {
             prayer, fellowship, and service.`
         : config.heroDescription;
 
+    // Use darker overlay for lighter images
+    const needsDarkerOverlay = ['youth_family', 'thrift_shop', 'music_liturgy'].includes(activePage);
+    const overlayClass = needsDarkerOverlay
+        ? 'bg-gradient-to-r from-black/75 via-black/50 to-black/20'
+        : 'bg-gradient-to-r from-black/55 via-black/25 to-transparent';
+
     heroContainer.innerHTML = `
-      <div class="grid md:grid-cols-5">
-        <div class="md:col-span-3 relative">
+      <div class="grid md:grid-cols-5 h-full">
+        <div class="md:col-span-3 relative h-full">
           <img src="${config.heroImage}" alt="${config.heroAlt}"
-            class="h-72 md:h-full w-full object-cover parallax-img" loading="eager" />
-          <div class="absolute inset-0 bg-gradient-to-r from-black/55 via-black/25 to-transparent"></div>
-          <div class="absolute left-6 bottom-6 right-6">
+            class="parallax-img absolute inset-0 z-0" loading="eager" />
+          <div class="absolute inset-0 z-10 ${overlayClass}"></div>
+          <div class="absolute left-6 bottom-6 right-6 z-20">
             <div class="text-white text-sm uppercase tracking-wide">Bridging Love &amp; Service</div>
             <h1 class="text-white text-3xl md:text-4xl font-semibold tracking-tight mt-2">Rector Search</h1>
             <p class="text-white/90 mt-2 max-w-xl">
@@ -106,17 +112,40 @@ function generateHeroSection() {
           <div class="text-sm uppercase tracking-wide text-[var(--muted)]">Visit us</div>
           <div class="mt-2 font-semibold text-[var(--ink)]">Sundays at 8 & 10 AM</div>
           <div class="text-[var(--muted)] mt-1">Holy Eucharist • All are welcome</div>
-          <div class="mt-4 rounded-2xl border border-slate-200 bg-slate-50 p-4">
-            <a href="https://www.google.com/maps/place/1114+Ninth+Street,+Coronado,+CA+92118" target="_blank"
-              rel="noopener noreferrer" class="text-[var(--ink)] font-medium hover:underline">1114 Ninth Street</a>
-            <div class="text-[var(--muted)]">Coronado, CA 92118</div>
-            <a href="tel:+16194354561" class="text-[var(--muted)] hover:underline">(619) 435-4561</a>
+          <div class="mt-4 rounded-2xl border border-slate-200 bg-slate-50 p-4 flex gap-3 items-start">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round" class="text-[var(--sage)] flex-shrink-0 mt-0.5">
+              <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+              <circle cx="12" cy="10" r="3"></circle>
+            </svg>
+            <div class="flex-1">
+              <a href="https://www.google.com/maps/place/1114+Ninth+Street,+Coronado,+CA+92118" target="_blank"
+                rel="noopener noreferrer" class="text-[var(--ink)] font-medium hover:underline">1114 Ninth Street</a>
+              <div class="text-[var(--muted)]">Coronado, CA 92118</div>
+              <a href="tel:+16194354561" class="text-[var(--muted)] hover:underline">(619) 435-4561</a>
+            </div>
+            <img src="${pathPrefix}assets/logo.png" 
+              alt="Christ Church Logo" class="flex-shrink-0 self-center" style="width: 144px; height: auto;" loading="lazy" />
           </div>
           <div class="mt-5 flex flex-wrap gap-2">
-            <a class="rounded-xl border border-slate-200 px-4 py-2 hover:bg-slate-100"
-              href="${pagePathPrefix}worship.html">Worship</a>
-            <a class="rounded-xl border border-slate-200 px-4 py-2 hover:bg-slate-100"
-              href="https://christchurchcoronado.org/live-stream" target="_blank" rel="noreferrer">Live Stream</a>
+            <a class="rounded-xl border border-slate-200 px-4 py-2 hover:bg-slate-100 flex items-center gap-2"
+              href="https://christchurchcoronado.org/news-and-events" target="_blank" rel="noreferrer">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="10"></circle>
+                <line x1="2" y1="12" x2="22" y2="12"></line>
+                <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+              </svg>
+              Website
+            </a>
+            <a class="rounded-xl border border-slate-200 px-4 py-2 hover:bg-slate-100 flex items-center gap-2"
+              href="https://christchurchcoronado.org/live-stream" target="_blank" rel="noreferrer">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <polygon points="5 3 19 12 5 21 5 3"></polygon>
+              </svg>
+              Live Stream
+            </a>
             <a class="rounded-xl border border-slate-200 px-4 py-2 hover:bg-slate-100 flex items-center gap-2"
               href="https://www.instagram.com/nadochristchurch" target="_blank" rel="noopener noreferrer"
               aria-label="Instagram">
@@ -145,7 +174,7 @@ function generateBottomCards() {
         <div class="mt-2 text-[var(--muted)]">Bridging Love and Service</div>
       </div>
       <div class="cc-card p-6">
-        <div class="font-semibold">Worship</div>
+        <div class="font-semibold"><a href="https://christchurchcoronado.org/news-and-events" target="_blank">Website</a></div>
         <div class="mt-2 text-[var(--muted)]">Rite I & Rite II, with a rich musical life.</div>
       </div>
       <div class="cc-card p-6">
@@ -169,7 +198,7 @@ function generateHeader() {
     <div class="sticky top-0 z-50 cc-topbar" id="header">
         <div class="cc-shell py-4 flex items-center justify-between gap-4">
             <a href="${pathPrefix}index.html" class="flex items-center gap-3">
-                <img src="${pathPrefix}assets/logo.png" alt="Christ Church Coronado logo"
+                <img src="${pathPrefix}assets/episcopal_shield.svg" alt="Episcopal Church Shield"
                     class="h-10 w-10 rounded-2xl object-contain bg-white border border-slate-200 p-1" />
                 <div class="leading-tight">
                     <div class="font-semibold">Christ Church</div>
