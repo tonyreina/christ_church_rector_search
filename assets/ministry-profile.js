@@ -47,7 +47,7 @@ function generateMinistryProfileItems() {
                 Our Service Ministry helps our parish live out a faith
                 that
                 is truly active and visible. James 2:17 says, "So also faith by itself, if it does not have works, is dead."
-                Guided by that call, we raise funds for Vida Joven, shelter for orphans in Tijuana, through our annual Cinco
+                Guided by that call, we raise funds for <a href="https://vjkids.org/" target="_blank" rel="noopener noreferrer" class="underline">Vida Joven</a>, shelter for orphans in Tijuana, through our annual Cinco
                 de Mayo dinner. We also provide backpacks and school supplies for children, Thanksgiving meals for families
                 in
                 need.<br>In recent years, we revived a longtime tradition of offering practical care to neighbors
@@ -140,7 +140,7 @@ function generateMinistryProfileItems() {
                 the Cross and a lecture series, sharing a simple meal and deepening fellowship.<br>Our congregation
                 participates in the San Diego Pride celebration alongside others in the Diocese, praying at the Cathedral
                 and
-                witnessing to God's inclusive love. We support Vida Joven orphanages in Mexico through fundraising that
+                witnessing to God's inclusive love. We support <a href="https://vjkids.org/" target="_blank" rel="noopener noreferrer" class="underline">Vida Joven</a> orphanages in Mexico through fundraising that
                 helps
                 provide food and care. Through our Peace and Justice Ministry, we educate ourselves about suffering at the
                 border and offer prayerful presence for those facing immigration court proceedings, standing as
