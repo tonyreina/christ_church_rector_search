@@ -330,6 +330,15 @@ const panelObserver = new IntersectionObserver((entries) => {
 function setupObservers() {
     // Observe all fade-in elements
     document.querySelectorAll('.fade-in').forEach(el => {
+        // Check if element is already in viewport
+        const rect = el.getBoundingClientRect();
+        const isInViewport = rect.top < window.innerHeight && rect.bottom > 0;
+
+        if (isInViewport) {
+            // If already in viewport, make it visible immediately
+            el.classList.add('visible');
+        }
+
         fadeInObserver.observe(el);
     });
 
