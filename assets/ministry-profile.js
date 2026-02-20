@@ -212,9 +212,10 @@ function generateMinistryProfileItems() {
         </button>
     `;
 
-    // Generate the items HTML
+    // Generate the items HTML with a random starting card
+    const randomStart = Math.floor(Math.random() * items.length);
     const itemsHTML = items.map((item, index) => `
-        <div class="ministry-profile-item ${index === 0 ? 'active' : ''} cc-callout p-6 md:p-7">
+        <div class="ministry-profile-item ${index === randomStart ? 'active' : ''} cc-callout p-6 md:p-7" data-index="${index}">
           <div class="text-sm uppercase tracking-wide text-[var(--muted)]">From our Ministry Profile</div>
           <h3 class="text-2xl font-semibold tracking-tight mt-2">${item.title}</h3>
           <p class="text-[var(--muted)] leading-relaxed mt-3">
@@ -224,6 +225,7 @@ function generateMinistryProfileItems() {
     `).join('');
 
     container.innerHTML = buttonsHTML + itemsHTML;
+    container.dataset.startIndex = randomStart;
 }
 // Rotate ministry profile sections with navigation
 function rotateMinistryProfile() {
@@ -236,7 +238,7 @@ function rotateMinistryProfile() {
     const prevBtn = container.querySelector('.profile-nav-btn.prev');
     const nextBtn = container.querySelector('.profile-nav-btn.next');
 
-    let currentIndex = 0;
+    let currentIndex = parseInt(container.dataset.startIndex) || 0;
     let autoRotateInterval;
 
     function showItem(index) {
