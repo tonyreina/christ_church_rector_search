@@ -459,6 +459,11 @@
             target="_blank" rel="noreferrer">ccds.org</a>.
         </p>
       </div>
+
+      <div class="mt-6">
+        <img src="../assets/ccds_image5.avif" alt="Christ Church Day School"
+          class="w-full rounded-2xl border border-slate-200 shadow-sm" loading="lazy" />
+      </div>
     </section>
 
     <section class="mt-10 cc-panel cc-content fade-in">
@@ -817,6 +822,31 @@
 
     document.querySelectorAll('.cc-panel').forEach(el => {
       panelObserver.observe(el);
+    });
+
+    // Parallax effect for hero image
+    const parallaxImg = document.querySelector('.parallax-img');
+    const heroSection = document.getElementById('heroSection');
+
+    function handleParallax() {
+      if (parallaxImg && heroSection && window.innerWidth >= 768) {
+        const scrolled = window.scrollY;
+        const heroTop = heroSection.offsetTop;
+        const heroHeight = heroSection.offsetHeight;
+
+        if (scrolled < heroTop + heroHeight) {
+          const yPos = (scrolled - heroTop) * 0.3;
+          parallaxImg.style.transform = `translateY(${yPos}px)`;
+        }
+      }
+    }
+
+    window.addEventListener('scroll', handleParallax, { passive: true });
+
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && nav && !nav.classList.contains('hidden')) {
+        nav.classList.add('hidden');
+      }
     });
 
     window.addEventListener('load', () => {
