@@ -317,11 +317,6 @@ const fadeInObserver = new IntersectionObserver((entries) => {
     });
 }, observerOptions);
 
-// Observe all fade-in elements
-document.querySelectorAll('.fade-in').forEach(el => {
-    fadeInObserver.observe(el);
-});
-
 // Observe panels for reveal animation
 const panelObserver = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
@@ -331,9 +326,18 @@ const panelObserver = new IntersectionObserver((entries) => {
     });
 }, observerOptions);
 
-document.querySelectorAll('.cc-panel').forEach(el => {
-    panelObserver.observe(el);
-});
+// Function to set up observers for dynamic content
+function setupObservers() {
+    // Observe all fade-in elements
+    document.querySelectorAll('.fade-in').forEach(el => {
+        fadeInObserver.observe(el);
+    });
+
+    // Observe all panels
+    document.querySelectorAll('.cc-panel').forEach(el => {
+        panelObserver.observe(el);
+    });
+}
 
 // Parallax effect for hero image
 const parallaxImg = document.querySelector('.parallax-img');
@@ -450,4 +454,7 @@ window.addEventListener('load', () => {
     if (typeof rotateMinistryProfile === 'function') {
         rotateMinistryProfile();
     }
+
+    // Set up observers after all content has been generated
+    setupObservers();
 });
