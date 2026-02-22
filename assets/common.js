@@ -443,8 +443,8 @@ function animateList() {
     // Start with first item
     highlightNext();
 
-    // Cycle every 30 seconds
-    setInterval(highlightNext, 30000);
+    // Cycle every 10 seconds
+    setInterval(highlightNext, 10000);
 }
 
 // Initialize on load
