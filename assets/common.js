@@ -444,7 +444,7 @@ function animateList() {
     highlightNext();
 
     // Cycle every 2.5 seconds
-    setInterval(highlightNext, 2500);
+    setInterval(highlightNext, 30000);
 }
 
 // Initialize on load
