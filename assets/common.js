@@ -443,7 +443,7 @@ function animateList() {
     // Start with first item
     highlightNext();
 
-    // Cycle every 2.5 seconds
+    // Cycle every 30 seconds
     setInterval(highlightNext, 30000);
 }
 
