@@ -4,44 +4,44 @@ const PAGE_CONFIGS = {
         title: 'Welcome • Rector Search',
         heroImage: 'assets/hero_home.jpg',
         heroAlt: 'Christ Church Coronado',
-        heroDescription: 'Christ Episcopal Church in Coronado, California — a vibrant, worshipping, beachside community shaped by prayer, fellowship, and service.',
+        heroDescription: 'Christ Episcopal Church in Coronado, California — a vibrant, worshiping, beachside community shaped by prayer, fellowship, and service.',
         heroLink: 'https://en.wikipedia.org/wiki/Coronado,_California'
     },
     'worship': {
         title: 'Worship • Rector Search',
         heroImage: '../assets/worship_congregation.jpg',
         heroAlt: 'Worship at Christ Church Coronado',
-        heroDescription: 'Christ Episcopal Church in Coronado, California — a vibrant worshipping community shaped by prayer, fellowship, and service.'
+        heroDescription: 'Christ Episcopal Church in Coronado, California — a vibrant worshiping community shaped by prayer, fellowship, and service.'
     },
     'youth_family': {
         title: 'Youth & Family • Rector Search',
         heroImage: '../assets/hero_youth.jpg',
         heroAlt: 'Youth and Family Ministry',
-        heroDescription: 'Christ Episcopal Church in Coronado, California — a vibrant worshipping community shaped by prayer, fellowship, and service.'
+        heroDescription: 'Christ Episcopal Church in Coronado, California — a vibrant worshiping community shaped by prayer, fellowship, and service.'
     },
     'service_ministry': {
         title: 'Service Ministry • Rector Search',
         heroImage: '../assets/hero_service.jpg',
         heroAlt: 'Service Ministry',
-        heroDescription: 'Christ Episcopal Church in Coronado, California — a vibrant worshipping community shaped by prayer, fellowship, and service.'
+        heroDescription: 'Christ Episcopal Church in Coronado, California — a vibrant worshiping community shaped by prayer, fellowship, and service.'
     },
     'day_school': {
         title: 'Christ Church Day School • Rector Search',
         heroImage: '../assets/hero_school.webp',
         heroAlt: 'Christ Church Day School',
-        heroDescription: 'Christ Episcopal Church in Coronado, California — a vibrant worshipping community shaped by prayer, fellowship, and service.'
+        heroDescription: 'Christ Episcopal Church in Coronado, California — a vibrant worshiping community shaped by prayer, fellowship, and service.'
     },
     'thrift_shop': {
         title: 'Thrift Shop • Rector Search',
         heroImage: '../assets/thrift_shoppers.jpg',
         heroAlt: 'Christ Church Thrift Shop',
-        heroDescription: 'Christ Episcopal Church in Coronado, California — a vibrant worshipping community shaped by prayer, fellowship, and service.'
+        heroDescription: 'Christ Episcopal Church in Coronado, California — a vibrant worshiping community shaped by prayer, fellowship, and service.'
     },
     'music_liturgy': {
         title: 'Choir & Altar Guild • Rector Search',
         heroImage: '../assets/hero_music.jpg',
         heroAlt: 'Music Ministry',
-        heroDescription: 'Christ Episcopal Church in Coronado, California — a vibrant worshipping community shaped by prayer, fellowship, and service.'
+        heroDescription: 'Christ Episcopal Church in Coronado, California — a vibrant worshiping community shaped by prayer, fellowship, and service.'
     }
 };
 
@@ -84,7 +84,7 @@ function generateHeroSection() {
     const descriptionHTML = config.heroLink
         ? `Christ Episcopal Church in <a href="${config.heroLink}" target="_blank"
             rel="noopener noreferrer" class="underline hover:text-white transition-colors">Coronado, California</a>
-            — a vibrant, worshipping, beachside community shaped by
+            — a vibrant, worshiping, beachside community shaped by
             prayer, fellowship, and service.`
         : config.heroDescription;
 
