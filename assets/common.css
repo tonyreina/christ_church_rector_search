@@ -643,11 +643,15 @@ h4 {
     text-transform: uppercase;
     transition: all 0.3s var(--transition-smooth);
     position: relative;
+    text-decoration: none !important;
+    border: 2px solid var(--sage);
+    box-shadow: 0 1px 4px rgba(47, 74, 61, 0.10);
 }
 
 .cc-nav a:hover {
-    background: rgba(26, 26, 26, .06);
-    transform: translateY(-1px);
+    background: rgba(47, 74, 61, 0.08);
+    transform: translateY(-2px) scale(1.03);
+    border-color: var(--sage-2);
 }
 
 .cc-nav a:focus-visible {
@@ -658,7 +662,8 @@ h4 {
 .cc-nav a.is-active {
     background: var(--sage);
     color: #fff;
-    box-shadow: 0 2px 8px rgba(47, 74, 61, 0.3);
+    border-color: var(--sage-2);
+    box-shadow: 0 4px 16px rgba(47, 74, 61, 0.18);
 }
 
 .cc-btn {
@@ -940,6 +945,7 @@ img {
     display: flex;
     gap: 0.75rem;
     align-items: flex-start;
+    max-width: 100%;
 }
 
 .hero-link-btn {
@@ -959,8 +965,13 @@ img {
 }
 
 .logo-img {
-    width: 144px;
-    height: auto;
+    width: auto;
+    height: 60px;
+    max-width: 120px;
+    max-height: 60px;
+    object-fit: contain;
+    flex-shrink: 0;
+    display: block;
 }
 
 /* ===== PHOTO HIGHLIGHTS ===== */

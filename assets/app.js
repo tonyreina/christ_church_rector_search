@@ -121,9 +121,8 @@ function generateHeroSection(pageData) {
         ? 'hero-overlay-dark'
         : 'hero-overlay';
 
-    const heroLinkHTML = pageData.heroLink
-        ? `Christ Episcopal Church in <a href="${pageData.heroLink}" target="_blank" rel="noopener noreferrer" class="underline hover-white">Coronado, California</a> — a vibrant, worshiping, beachside community shaped by prayer, fellowship, and service.`
-        : 'Christ Episcopal Church in Coronado, California — a vibrant worshiping community shaped by prayer, fellowship, and service.';
+    const heroLinkHTML =
+        'Christ Episcopal Church in Coronado, California — a vibrant, worshiping, beachside community shaped by prayer, fellowship, and service.';
 
     heroContainer.innerHTML = `
     <div class="grid grid-5-3-2 h-full">
