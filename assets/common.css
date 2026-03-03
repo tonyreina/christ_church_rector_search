@@ -326,3 +326,21 @@ img {
     color: var(--sage);
     transform: translateX(4px);
 }
+
+/* Social media icon links */
+.social-icon-link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--muted);
+    transition: all 0.3s var(--transition-smooth);
+}
+
+.social-icon-link:hover {
+    color: var(--sage);
+    transform: translateY(-2px);
+}
+
+.social-icon-link svg {
+    transition: all 0.3s var(--transition-smooth);
+}

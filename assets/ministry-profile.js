@@ -117,7 +117,7 @@ function generateMinistryProfileItems() {
         },
         {
             title: "Worship, prayer, and community life",
-            pages: ['worship', 'music_liturgy'],
+            pages: ['worship', 'music_ministry', 'altar_guild'],
             content: `
                 Christ Church is a loving, Spirit-filled community grounded in worship, prayer, and relationships. We are 
                 nourished through thoughtful liturgy, beautiful music, and gathering at the Lord's Table. Fellowship also 

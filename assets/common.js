@@ -37,10 +37,16 @@ const PAGE_CONFIGS = {
         heroAlt: 'Christ Church Thrift Shop',
         heroDescription: 'Christ Episcopal Church in Coronado, California — a vibrant worshiping community shaped by prayer, fellowship, and service.'
     },
-    'music_liturgy': {
-        title: 'Choir & Altar Guild • Rector Search',
+    'music_ministry': {
+        title: 'Music Ministry • Rector Search',
         heroImage: '../assets/hero_music.jpg',
         heroAlt: 'Music Ministry',
+        heroDescription: 'Christ Episcopal Church in Coronado, California — a vibrant worshiping community shaped by prayer, fellowship, and service.'
+    },
+    'altar_guild': {
+        title: 'Altar Guild • Rector Search',
+        heroImage: '../assets/altar_guild.jpg',
+        heroAlt: 'Altar Guild',
         heroDescription: 'Christ Episcopal Church in Coronado, California — a vibrant worshiping community shaped by prayer, fellowship, and service.'
     }
 };
@@ -59,7 +65,8 @@ function getPageInfo() {
     else if (path.includes('service_ministry.html')) activePage = 'service_ministry';
     else if (path.includes('day_school.html')) activePage = 'day_school';
     else if (path.includes('thrift_shop.html')) activePage = 'thrift_shop';
-    else if (path.includes('music_liturgy.html')) activePage = 'music_liturgy';
+    else if (path.includes('music_ministry.html')) activePage = 'music_ministry';
+    else if (path.includes('altar_guild.html')) activePage = 'altar_guild';
 
     return { isIndex, pathPrefix, pagePathPrefix, activePage };
 }
@@ -89,7 +96,7 @@ function generateHeroSection() {
         : config.heroDescription;
 
     // Use darker overlay for lighter images
-    const needsDarkerOverlay = ['youth_family', 'thrift_shop', 'music_liturgy'].includes(activePage);
+    const needsDarkerOverlay = ['youth_family', 'thrift_shop', 'music_ministry', 'altar_guild'].includes(activePage);
     const overlayClass = needsDarkerOverlay
         ? 'bg-gradient-to-r from-black/75 via-black/50 to-black/20'
         : 'bg-gradient-to-r from-black/55 via-black/25 to-transparent';
@@ -157,6 +164,14 @@ function generateHeroSection() {
               </svg>
               Instagram
             </a>
+            <a class="rounded-xl border border-slate-200 px-4 py-2 hover:bg-slate-100 flex items-center gap-2"
+              href="https://www.facebook.com/christchurchcoronado/" target="_blank" rel="noopener noreferrer"
+              aria-label="Facebook">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+              </svg>
+              Facebook
+            </a>
           </div>
         </div>
       </div>
@@ -219,7 +234,8 @@ function generateHeader() {
                 <a class="${activePage === 'service_ministry' ? 'is-active' : ''}" href="${pagePathPrefix}service_ministry.html">Service Ministry</a>
                 <a class="${activePage === 'day_school' ? 'is-active' : ''}" href="${pagePathPrefix}day_school.html">Christ Church Day School</a>
                 <a class="${activePage === 'thrift_shop' ? 'is-active' : ''}" href="${pagePathPrefix}thrift_shop.html">Thrift Shop</a>
-                <a class="${activePage === 'music_liturgy' ? 'is-active' : ''}" href="${pagePathPrefix}music_liturgy.html">Choir & Altar Guild</a>
+                <a class="${activePage === 'music_ministry' ? 'is-active' : ''}" href="${pagePathPrefix}music_ministry.html">Music Ministry</a>
+                <a class="${activePage === 'altar_guild' ? 'is-active' : ''}" href="${pagePathPrefix}altar_guild.html">Altar Guild</a>
             </nav>
         </div>
 
@@ -231,7 +247,8 @@ function generateHeader() {
                 <a class="${activePage === 'service_ministry' ? 'is-active' : ''}" href="${pagePathPrefix}service_ministry.html">Service Ministry</a>
                 <a class="${activePage === 'day_school' ? 'is-active' : ''}" href="${pagePathPrefix}day_school.html">Christ Church Day School</a>
                 <a class="${activePage === 'thrift_shop' ? 'is-active' : ''}" href="${pagePathPrefix}thrift_shop.html">Thrift Shop</a>
-                <a class="${activePage === 'music_liturgy' ? 'is-active' : ''}" href="${pagePathPrefix}music_liturgy.html">Choir & Altar Guild</a>
+                <a class="${activePage === 'music_ministry' ? 'is-active' : ''}" href="${pagePathPrefix}music_ministry.html">Music Ministry</a>
+                <a class="${activePage === 'altar_guild' ? 'is-active' : ''}" href="${pagePathPrefix}altar_guild.html">Altar Guild</a>
             </div>
         </div>
     </div>
@@ -248,11 +265,17 @@ function generateFooter() {
     footer.innerHTML = `
     <div class="cc-shell py-8 text-sm text-[var(--muted)] flex flex-col md:flex-row items-start md:items-center justify-between gap-3">
         <div>© 2026 Christ Church • Rector Search</div>
-        <div class="flex gap-4">
+        <div class="flex gap-4 items-center">
             <a class="hover:underline" href="${pagePathPrefix}worship.html">Worship</a>
             <a class="hover:underline" href="${pagePathPrefix}service_ministry.html">Service</a>
             <a class="hover:underline" href="https://www.instagram.com/nadochristchurch" target="_blank"
                 rel="noopener noreferrer">Instagram</a>
+            <a class="social-icon-link" href="https://www.facebook.com/christchurchcoronado/" target="_blank"
+                rel="noopener noreferrer" aria-label="Facebook">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                </svg>
+            </a>
         </div>
     </div>
     `;
