@@ -1,6 +1,7 @@
 {
     "pages": {
         "index": {
+            "slideshow": [],
             "title": "Welcome",
             "metaTitle": "Welcome • Rector Search",
             "description": "Christ Church Coronado seeks a compassionate rector to lead our friendly Episcopal community in worship, service, and faith formation.",
@@ -16,7 +17,7 @@
                         "<p class=\"text-lg font-medium text-ink\"><a href=\"https://ccds.org\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"link\">Christ Church Day School</a>, founded in 1957, is the only Episcopal elementary school in the <a href=\"https://edsd.org/\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"link\">Diocese of San Diego</a>. We are committed to its future and to Christian education for all ages.</p>",
                         "<div class=\"mt-2\"><p class=\"text-lg font-medium text-ink callout-box\">We seek a mature leader trusted to work collaboratively with vestry, lay leaders, school, and staff.</p></div>",
                         "<p class=\"text-lg font-medium text-ink\"><span class=\"font-semibold\">We welcome all people</span> and look forward to meeting our next rector. <span class=\"italic\">If you feel called, we hope to hear from you.</span></p>",
-                        "<p class=\"font-medium text-ink italic text-lg\">— The People of Christ Church</p>"
+                        "<p class=\"font-medium text-ink italic text-lg\">✞ The People of Christ Church</p>"
                     ]
                 },
                 {
@@ -38,6 +39,7 @@
             "showPhotoHighlights": true
         },
         "worship": {
+            "slideshow": [],
             "title": "Worship",
             "metaTitle": "Worship • Rector Search",
             "description": "Join us for traditional Episcopal worship at Christ Church Coronado. Sundays at 8am (Rite I) and 10am (Rite II with choir).",
@@ -65,6 +67,28 @@
             ]
         },
         "youth_family": {
+            "slideshow": [
+                {
+                    "src": "assets/youth1.jpeg",
+                    "alt": "Youth ministry photo 1"
+                },
+                {
+                    "src": "assets/youth2.jpeg",
+                    "alt": "Youth ministry photo 2"
+                },
+                {
+                    "src": "assets/youth3.jpeg",
+                    "alt": "Youth ministry photo 3"
+                },
+                {
+                    "src": "assets/youth4.jpeg",
+                    "alt": "Youth ministry photo 4"
+                },
+                {
+                    "src": "assets/youth5.jpeg",
+                    "alt": "Youth ministry photo 5"
+                }
+            ],
             "title": "Youth & Family",
             "metaTitle": "Youth & Family • Rector Search",
             "description": "Youth and family ministry at Christ Church Coronado includes Sunday School, Kids Praise choir, and Camp Create summer VBS.",
@@ -82,19 +106,13 @@
                         "<li>Summer Vacation Bible School.</li>",
                         "<li>Intergenerational worship, events, and programming.</li>",
                         "<li>Opportunities to serve Sunday mornings and in Outreach.</li>",
-                        "</ul>",
-                        "<div class=\"slideshow\">",
-                        "<img src=\"assets/youth1.jpeg\" alt=\"Youth ministry photo 1\" class=\"slide\" />",
-                        "<img src=\"assets/youth2.jpeg\" alt=\"Youth ministry photo 2\" class=\"slide\" />",
-                        "<img src=\"assets/youth3.jpeg\" alt=\"Youth ministry photo 3\" class=\"slide\" />",
-                        "<img src=\"assets/youth4.jpeg\" alt=\"Youth ministry photo 4\" class=\"slide\" />",
-                        "<img src=\"assets/youth5.jpeg\" alt=\"Youth ministry photo 5\" class=\"slide\" />",
-                        "</div>"
+                        "</ul>"
                     ]
                 }
             ]
         },
         "service_ministry": {
+            "slideshow": [],
             "title": "Service Ministry",
             "metaTitle": "Service Ministry • Rector Search",
             "description": "Christ Church Coronado's service ministry includes refugee support, food drives, and partnerships with St. Mark's and SDOP.",
@@ -107,8 +125,8 @@
                     "content": [
                         "<div class=\"flex-content\">",
                         "<div class=\"flex-1\">",
-                        "<p>Our Service Ministry helps our parish live an active, visible faith. Meeting monthly, this core group of volunteers plans outreach efforts for the church community. Our parish community not only provides financial support as it offers hands-on opportunities, allowing for involvement in our spiritual call to help others. While some activities are held at church, others involve heading over the bridge to <a href=\"https://stmarks-cityheights.org/\" target=\"_blank\" rel=\"noopener\">St. Mark's</a> and <a href=\"https://www.stlukesnorthpark.org/\" target=\"_blank\" rel=\"noopener\">St. Luke's</a> parishes to provide support for the unhoused and those in need.</p>",
-                        "<p>As James 2:17 reminds us, \"faith without works is dead\". Guided by that call, we raise funds for <a href=\"https://vjkids.org/\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"underline\">Vida Joven</a> through our annual festive Cinco de Mayo dinner, which provides shelter for orphans in Tijuana and Northern Mexico. The Backpack Drive provides over 200 backpacks filled with school supplies for children, and our Thanksgiving Drive works with Christ Church Day School to collect food and financial donations to provide food for 200 families. We share the joy of Advent by providing Christmas gifts for the <a href=\"https://episcopalcommunityservices.org/\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"underline\">Episcopal Community Services</a> Head Start programs. And our Lenten Drive annually supports causes the Service Ministry team identifies to serve those in need.</p>",
+                        "<p>Our Service Ministry helps our parish live an active, visible faith. Meeting monthly, this core group of volunteers plans outreach efforts for the church community. Our parish community not only provides financial support as it offers hands-on opportunities, allowing for involvement in our spiritual call to help others. While some activities are held at church, others involve heading over the bridge to <a href=\"https://stmarks-cityheights.org/\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"link\">St. Mark's</a> and <a href=\"https://www.stlukesnorthpark.org/\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"link\">St. Luke's</a> parishes to provide support for the unhoused and those in need.</p>",
+                        "<p>As James 2:17 reminds us, \"faith without works is dead\". Guided by that call, we raise funds for <a href=\"https://vjkids.org/\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"link\">Vida Joven</a> through our annual festive Cinco de Mayo dinner, which provides shelter for orphans in Tijuana and Northern Mexico. The Backpack Drive provides over 200 backpacks filled with school supplies for children, and our Thanksgiving Drive works with Christ Church Day School to collect food and financial donations to provide food for 200 families. We share the joy of Advent by providing Christmas gifts for the <a href=\"https://episcopalcommunityservices.org/\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"link\">Episcopal Community Services</a> Head Start programs. And our Lenten Drive annually supports causes the Service Ministry team identifies to serve those in need.</p>",
                         "<p>In recent years, we revived \"Blessings in a Bag\", a tradition of practical care for neighbors experiencing homelessness by equipping parishioners with small gift bags of food and essentials to share with dignity and kindness. Our Thrift Shop, by raising over $100,000/year, extends this outreach as a community ministry, supported by volunteers and donors beyond our congregation. Ongoing, Christ Church partners with St. Mark's to support their Food Pantry, now serving 400 families weekly.</p>",
                         "</div>",
                         "<div class=\"video-container\">",
@@ -117,16 +135,17 @@
                         "</div>",
                         "</div>",
                         "<h3 class=\"subheading\">Peace & Justice Committee</h3>",
-                        "<p>Christ Church also has a Peace & Justice Committee. During COVID, parishioners participated in the Episcopal Church's Sacred Ground program, which deepened our commitment to faithful action and honest conversation. From that work, we sensed a call to engage issues affecting our neighbors, and we joined the <a href=\"https://sdop.org/\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"underline\">San Diego Organizing Project (SDOP)</a>, a non-partisan, multi-faith network. Through listening and discernment, we focused first on housing, homelessness, and ocean pollution, supporting efforts such as renter protections, housing initiatives, and practical support for the unhoused.</p>",
+                        "<p>Christ Church also has a Peace & Justice Committee. During COVID, parishioners participated in the Episcopal Church's Sacred Ground program, which deepened our commitment to faithful action and honest conversation. From that work, we sensed a call to engage issues affecting our neighbors, and we joined the <a href=\"https://sdop.org/\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"link\">San Diego Organizing Project (SDOP)</a>, a non-partisan, multi-faith network. Through listening and discernment, we focused first on housing, homelessness, and ocean pollution, supporting efforts such as renter protections, housing initiatives, and practical support for the unhoused.</p>",
                         "<p>More recently, we have felt a clear call toward immigration and refugee support. We have hosted Home Meetings, participated in forums and rallies, and held discussions on issues including refugee resettlement. In collaboration with Our Lady of Guadalupe Church and SDOP, we now support the FAITH program (Faithful Accompaniment in Trust & Hope), offering moral support and prayerful presence for migrants at court hearings and related sites.</p>",
                         "<div class=\"info-box\">",
-                        "<p>📹 <a href=\"https://www.cbs8.com/article/news/local/san-diego-faith-leaders-community-unite-in-procession-for-immigrant-families-amid-immigration-enforcement/509-a4d8dd0f-f8df-4661-a8e6-97921c9e01e0\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"underline\">Watch: Video about immigration at San Diego courthouse (from the KFMB San Diego CBS News 8)</a></p>",
+                        "<p>📹 <a href=\"https://www.cbs8.com/article/news/local/san-diego-faith-leaders-community-unite-in-procession-for-immigrant-families-amid-immigration-enforcement/509-a4d8dd0f-f8df-4661-a8e6-97921c9e01e0\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"link\">Watch: Video about immigration at San Diego courthouse (from the KFMB San Diego CBS News 8)</a></p>",
                         "</div>"
                     ]
                 }
             ]
         },
         "day_school": {
+            "slideshow": [],
             "title": "Christ Church Day School",
             "metaTitle": "Christ Church Day School • Rector Search",
             "description": "Christ Church Day School is a thriving JK-8 Episcopal school in Coronado, serving 130 students with small classes since 1957.",
@@ -153,6 +172,7 @@
             ]
         },
         "thrift_shop": {
+            "slideshow": [],
             "title": "Thrift Shop",
             "metaTitle": "Thrift Shop • Rector Search",
             "description": "Christ Church Thrift Shop has served Coronado for 70+ years, raising over $100,000 annually for parish ministries and outreach.",
@@ -163,7 +183,7 @@
                     "kicker": "Thrift Shop",
                     "heading": "Joining God's work in the world",
                     "content": [
-                        "<p>One of the most significant and impactful ministries of Christ Church is our Thrift Shop. In operation for over 75 years, it is managed and staffed entirely by nearly 50 volunteers. 100% of the proceeds support a wide range of parish activities and outreach efforts at the diocesan, national, and international levels. In 2025 alone, over $100,000 in funds were provided to worthwhile ministries, including <a href=\"https://ccds.org\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"link\">Christ Church Day School</a>, the <a href=\"https://sandiegofoodbank.org/\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"underline\">San Diego Food Bank</a>, <a href=\"https://wck.org/\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"underline\">World Central Kitchen</a>, <a href=\"https://pawsofcoronado.org/\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"underline\">PAWS</a> (our local animal welfare group), <a href=\"https://vjkids.org/\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"underline\">Vida Joven</a> (a foundation that supports orphanages in Tijuana), <a href=\"https://refugee-net.org/\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"underline\">The Episcopal Refugee Network</a>, and various other projects of <a href=\"https://edsd.org/\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"underline\">The Episcopal Diocese of San Diego</a>.</p>",
+                        "<p>One of the most significant and impactful ministries of Christ Church is our Thrift Shop. In operation for over 75 years, it is managed and staffed entirely by nearly 50 volunteers. All proceeds support a wide range of parish activities and outreach efforts at the diocesan, national, and international levels. In 2025 alone, over $100,000 in funds were provided to worthwhile ministries, including <a href=\"https://ccds.org\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"link\">Christ Church Day School</a>, the <a href=\"https://sandiegofoodbank.org/\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"link\">San Diego Food Bank</a>, <a href=\"https://wck.org/\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"link\">World Central Kitchen</a>, <a href=\"https://pawsofcoronado.org/\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"link\">PAWS</a> (our local animal welfare group), <a href=\"https://vjkids.org/\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"link\">Vida Joven</a> (a foundation that supports orphanages in Mexico), <a href=\"https://refugee-net.org/\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"link\">The Episcopal Refugee Network</a>, and various other projects of <a href=\"https://edsd.org/\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"link\">The Episcopal Diocese of San Diego</a>.</p>",
                         "<p>Beyond its vital financial outreach, the Thrift Shop provides help to low-income families by offering quality merchandise at very low cost. It also creates fellowship for volunteers and shoppers who've developed relationships over the years. Volunteer managers and workers come not only from our church, but from the Coronado community at large. The shop is open for sales and donations on Tuesday through Saturday, 10 am to 1 pm.</p>",
                         "<p>The Thrift Shop embodies our call to service in tangible, practical ways, connecting commerce with compassion and stewardship with generosity.</p>"
                     ]
@@ -193,12 +213,19 @@
                         "<h3 class=\"subheading\">Our Choir</h3>",
                         "<p>The choir at Christ Church is a dedicated group of singers who enhance our worship with beautiful sacred music. Through anthems, hymns, and seasonal music, the choir leads the congregation in praise and helps create a prayerful atmosphere. New members are always welcome, and no audition is required—just a love of music and a desire to serve.</p>",
                         "<h3 class=\"subheading\">Organ & Instrumental Music</h3>",
-                        "<p>Our historic organ is central to our musical tradition, providing accompaniment for hymns and offering preludes and postludes that frame our worship. Instrumental music, including special performances during feast days and seasons, enriches our liturgical life and deepens our connection to the sacred.</p>"
+                        "<p><a href=\"https://www.coronadonewsca.com/news/coronado_island_news/refurbishment-of-christ-church-organ-nearly-complete/article_8a4fa1f0-86db-11e4-b479-db80beb6ced4.html\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"link\">Our historic organ</a> is central to our musical tradition, providing accompaniment for hymns and offering preludes and postludes that frame our worship. Instrumental music, including special performances during feast days and seasons, enriches our liturgical life and deepens our connection to the sacred.<\/p>"
                     ]
+                }
+            ],
+            "slideshow": [
+                {
+                    "src": "assets/organ.png",
+                    "alt": "Christ Church Pipe Organ"
                 }
             ]
         },
         "altar_guild": {
+            "slideshow": [],
             "title": "Altar Guild",
             "metaTitle": "Altar Guild • Rector Search",
             "description": "The Altar Guild serves Christ Church through faithful care of the altar, sacred vessels, and liturgical preparations.",

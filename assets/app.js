@@ -3,11 +3,15 @@ function setupSlideshows() {
     var slideshows = document.querySelectorAll('.slideshow');
     slideshows.forEach(function (slideshow) {
         var slides = slideshow.querySelectorAll('.slide');
-        if (slides.length < 2) return;
         // Remove any existing active classes
         slides.forEach(slide => slide.classList.remove('active'));
         var current = 0;
         slides[current].classList.add('active');
+        if (slides.length < 2) {
+            // Only one image, no interval needed
+            if (slideshow._intervalId) clearInterval(slideshow._intervalId);
+            return;
+        }
         // Prevent multiple intervals on repeated calls
         if (slideshow._intervalId) clearInterval(slideshow._intervalId);
         slideshow._intervalId = setInterval(function () {
@@ -229,6 +233,15 @@ function renderPageContent(pageData) {
         }
     });
 
+    // Render slideshow if present and has images
+    if (Array.isArray(pageData.slideshow) && pageData.slideshow.length > 0) {
+        html += `
+        <div class="slideshow mt-10 fade-in">
+            ${pageData.slideshow.map(img => `<img src="${img.src}" alt="${img.alt}" class="slide" />`).join('')}
+        </div>
+        `;
+    }
+
     // Add additional images if present (e.g., thrift shop sign)
     if (pageData.additionalImages && pageData.additionalImages.length > 0) {
         pageData.additionalImages.forEach(img => {
@@ -315,7 +328,7 @@ const MINISTRY_PROFILES = [
     {
         title: "Serving beyond our parish",
         pages: ['service_ministry'],
-        content: `<p>Our Service Ministry helps our parish live out a faith that is truly active and visible. James 2:17 says, "So also faith by itself, if it does not have works, is dead." Guided by that call, we raise funds for <a href="https://vjkids.org/" target="_blank" rel="noopener noreferrer" class="underline">Vida Joven</a> orphanages in Mexico through our annual Cinco de Mayo dinner. We also provide backpacks and school supplies for children, Thanksgiving meals for families in need.</p>`
+        content: `<p>Our Service Ministry helps our parish live out a faith that is truly active and visible. James 2:17 says, "So also faith by itself, if it does not have works, is dead." Guided by that call, we raise funds for <a href="https://vjkids.org/" target="_blank" rel="noopener noreferrer" class="underline">Vida Joven</a> orphanages in Mexico through our annual Cinco de Mayo dinner. We also provide backpacks and school supplies for children at the start of the school year.</p>`
     },
     {
         title: "Caring for our neighbors",
