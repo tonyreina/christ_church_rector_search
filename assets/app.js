@@ -1,3 +1,22 @@
+// Slideshow setup for dynamically loaded content
+function setupSlideshows() {
+    var slideshows = document.querySelectorAll('.slideshow');
+    slideshows.forEach(function (slideshow) {
+        var slides = slideshow.querySelectorAll('.slide');
+        if (slides.length < 2) return;
+        // Remove any existing active classes
+        slides.forEach(slide => slide.classList.remove('active'));
+        var current = 0;
+        slides[current].classList.add('active');
+        // Prevent multiple intervals on repeated calls
+        if (slideshow._intervalId) clearInterval(slideshow._intervalId);
+        slideshow._intervalId = setInterval(function () {
+            slides[current].classList.remove('active');
+            current = (current + 1) % slides.length;
+            slides[current].classList.add('active');
+        }, 10000);
+    });
+}
 // Single Page App for Christ Church Rector Search
 // Consolidated JavaScript - replaces common.js and ministry-profile.js
 
@@ -221,6 +240,7 @@ function renderPageContent(pageData) {
     }
 
     container.innerHTML = html;
+    setupSlideshows();
 }
 
 // ===== PHOTO HIGHLIGHTS =====
