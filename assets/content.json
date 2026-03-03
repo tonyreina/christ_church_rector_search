@@ -64,7 +64,20 @@
                     ]
                 }
             ],
-            "slideshow": []
+            "slideshow": [
+                {
+                    "src": "assets/church_outside.jpg",
+                    "alt": "Outside church"
+                },
+                {
+                    "src": "assets/church_outside2.jpg",
+                    "alt": "Outside church"
+                },
+                {
+                    "src": "assets/church_window.jpg",
+                    "alt": "Church back window"
+                }
+            ]
         },
         "youth_family": {
             "title": "Youth & Family",
