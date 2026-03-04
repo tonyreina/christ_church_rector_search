@@ -121,6 +121,14 @@
 }
 
 @media (max-width: 767px) {
+    .grid-2 {
+        grid-template-columns: 1fr;
+    }
+
+    .grid-3 {
+        grid-template-columns: 1fr;
+    }
+
     .grid-5-3-2 {
         grid-template-columns: 1fr;
     }
