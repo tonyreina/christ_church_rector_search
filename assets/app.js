@@ -204,6 +204,8 @@ function generateHeroSection(pageData) {
             Facebook
           </a>
         </div>
+         <div class="mt-2 text-muted"><a href="assets/2025-Annual-Report-Christ-Church-Coronado.pdf" target="_blank"
+            rel="noopener noreferrer" class="link">Read our 2025 Annual Report</a></div>
       </div>
     </div>
   `;
