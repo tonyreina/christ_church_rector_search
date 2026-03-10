@@ -870,7 +870,8 @@ h4 {
 .parallax-hero {
     position: relative;
     overflow: hidden;
-    height: 400px;
+    min-height: 400px;
+    height: auto;
 }
 
 @media (min-width: 768px) {
