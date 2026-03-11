@@ -70,6 +70,26 @@
                         "<p>Most of our members value our traditional faith, but some would like more variety in worship, prayers, and music.</p>",
                         "<p>As we look to the future, we seek to honor the liturgical beauty that nourishes us while remaining open to new expressions of praise and prayer.</p>"
                     ]
+                },
+                {
+                    "kicker": "Liturgical Ministry",
+                    "heading": "Altar Guild at Christ Church",
+                    "content": [
+                        "<p class=\"cc-sub\">The Altar Guild serves as an essential ministry in the life of our parish. ",
+                        "Working reverently and quietly behind the scene, members ensure that the altar is prepared and ",
+                        "set for every worship service. They also assist in preparing the church for special feast days, ",
+                        "baptisms, confirmations, weddings, funerals, and the services of Holy Week and Easter. ",
+                        "Altar Guild duties include caring for the sacred vessels, vestments, and altar linens. ",
+                        "Members polish the brass and silver. They clean and maintain the Sanctuary and Sacristy. ",
+                        "It is the duty of the Altar Guild to order the bread, wine, oil and supplies that are used ",
+                        "for all worship services. In lieu of a Flower Ministry, the Altar Guild coordinates with a ",
+                        "local florist to ensure beautiful flower arrangements that have liturgically correct colors ",
+                        "for weekly and special services. This ministry is grounded in prayer and attention to detail. ",
+                        "The Altar Guild members serve under the direction of the clergy and contribute meaningfully ",
+                        "to the reverence, beauty and smooth flow of our common prayer. Through their faithful service, ",
+                        "the Altar Guild creates a joyful and sacred space where our parish family gathers to encounter ",
+                        "Christ in Word and Sacrament.</p>"
+                    ]
                 }
             ],
             "slideshow": [
@@ -338,36 +358,6 @@
                     "alt": "Christ Church Pipe Organ"
                 }
             ]
-        },
-        "altar_guild": {
-            "title": "Altar Guild",
-            "metaTitle": "Altar Guild • Rector Search",
-            "description": "The Altar Guild serves Christ Church through faithful care of the altar, sacred vessels, and liturgical preparations.",
-            "heroImage": "assets/altar_guild.jpg",
-            "heroAlt": "Altar Guild",
-            "sections": [
-                {
-                    "kicker": "Liturgical Ministry",
-                    "heading": "Altar Guild at Christ Church",
-                    "content": [
-                        "<p class=\"cc-sub\">The Altar Guild serves as an essential ministry in the life of our parish. ",
-                        "Working reverently and quietly behind the scene, members ensure that the altar is prepared and ",
-                        "set for every worship service. They also assist in preparing the church for special feast days, ",
-                        "baptisms, confirmations, weddings, funerals, and the services of Holy Week and Easter. ",
-                        "Altar Guild duties include caring for the sacred vessels, vestments, and altar linens. ",
-                        "Members polish the brass and silver. They clean and maintain the Sanctuary and Sacristy. ",
-                        "It is the duty of the Altar Guild to order the bread, wine, oil and supplies that are used ",
-                        "for all worship services. In lieu of a Flower Ministry, the Altar Guild coordinates with a ",
-                        "local florist to ensure beautiful flower arrangements that have liturgically correct colors ",
-                        "for weekly and special services. This ministry is grounded in prayer and attention to detail. ",
-                        "The Altar Guild members serve under the direction of the clergy and contribute meaningfully ",
-                        "to the reverence, beauty and smooth flow of our common prayer. Through their faithful service, ",
-                        "the Altar Guild creates a joyful and sacred space where our parish family gathers to encounter ",
-                        "Christ in Word and Sacrament.</p>"
-                    ]
-                }
-            ],
-            "slideshow": []
         }
     },
     "photoHighlights": [

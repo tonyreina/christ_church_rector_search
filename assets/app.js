@@ -91,7 +91,6 @@ function generateNavigation() {
         { page: 'day_school', label: 'Christ Church Day School' },
         { page: 'thrift_shop', label: 'Thrift Shop' },
         { page: 'music_ministry', label: 'Music Ministry' },
-        { page: 'altar_guild', label: 'Altar Guild' }
     ];
 
     const desktopNav = document.getElementById('desktopNav');
@@ -139,7 +138,7 @@ function generateHeroSection(pageData) {
     const heroContainer = document.getElementById('heroSection');
     if (!heroContainer) return;
 
-    const needsDarkerOverlay = ['youth_family', 'thrift_shop', 'music_ministry', 'altar_guild'].includes(getActivePage());
+    const needsDarkerOverlay = ['youth_family', 'thrift_shop', 'music_ministry'].includes(getActivePage());
     const overlayClass = needsDarkerOverlay
         ? 'hero-overlay-dark'
         : 'hero-overlay';
@@ -354,7 +353,7 @@ const MINISTRY_PROFILES = [
     },
     {
         title: "Worship, prayer, and community life",
-        pages: ['worship', 'music_ministry', 'altar_guild'],
+        pages: ['worship', 'music_ministry'],
         content: `<p>Christ Church is a loving, Spirit-filled community grounded in worship, prayer, and relationships. We are nourished through thoughtful liturgy, beautiful music, and gathering at the Lord's Table. Fellowship also matters to us: shared meals and parish gatherings deepen connection and remind us we do not walk alone. We care for one another's spiritual, emotional, and physical well-being through formation, prayer, and community life.</p>`
     },
     {
