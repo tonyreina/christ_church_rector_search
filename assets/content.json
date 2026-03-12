@@ -110,6 +110,26 @@
                     "alt": "Clares Cottage"
                 },
                 {
+                    "src": "assets/altar.jpg",
+                    "alt": "Altar"
+                },
+                {
+                    "src": "assets/bikes_front.jpg",
+                    "alt": "Bikes in front of church office"
+                },
+                {
+                    "src": "assets/church_outside3.jpg",
+                    "alt": "Hinde Hall"
+                },
+                {
+                    "src": "assets/memorial_garden.jpg",
+                    "alt": "Memorial Garden"
+                },
+                {
+                    "src": "assets/memorial_garden2.jpg",
+                    "alt": "Memorial Garden"
+                },
+                {
                     "src": "assets/church_window.jpg",
                     "alt": "Church back window"
                 }
@@ -159,6 +179,10 @@
                 {
                     "src": "assets/youth4.jpeg",
                     "alt": "Youth ministry photo 4"
+                },
+                {
+                    "src": "assets/kids_advent.jpg",
+                    "alt": "Advent"
                 },
                 {
                     "src": "assets/youth5.jpeg",
@@ -296,6 +320,10 @@
                 {
                     "src": "assets/ccds_outside.jpg",
                     "alt": "Day School 8"
+                },
+                {
+                    "src": "assets/jk_building.jpg",
+                    "alt": "Junior Kindergarten Building"
                 },
                 {
                     "src": "assets/ccds6.jpg",
