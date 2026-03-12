@@ -94,12 +94,20 @@
             ],
             "slideshow": [
                 {
+                    "src": "assets/church_outside2.jpg",
+                    "alt": "Outside church"
+                },
+                {
                     "src": "assets/church_outside.jpg",
                     "alt": "Outside church"
                 },
                 {
-                    "src": "assets/church_outside2.jpg",
-                    "alt": "Outside church"
+                    "src": "assets/historic_marker.jpg",
+                    "alt": "Historic marker"
+                },
+                {
+                    "src": "assets/clares_cottage.jpg",
+                    "alt": "Clares Cottage"
                 },
                 {
                     "src": "assets/church_window.jpg",
@@ -286,6 +294,10 @@
                     "alt": "Day School 5"
                 },
                 {
+                    "src": "assets/ccds_outside.jpg",
+                    "alt": "Day School 8"
+                },
+                {
                     "src": "assets/ccds6.jpg",
                     "alt": "Day School 6"
                 }
@@ -302,6 +314,8 @@
                     "kicker": "Thrift Shop",
                     "heading": "Joining God's work in the world",
                     "content": [
+                        "<div class=\"flex-content\">",
+                        "<div class=\"flex-1\">",
                         "<p>One of the most significant and impactful ministries of Christ Church is our Thrift Shop. ",
                         "In operation for over 75 years, it is managed and staffed entirely by nearly 50 volunteers from ",
                         "Christ Church and the surrounding community. All proceeds support a wide range of parish activities ",
@@ -318,7 +332,17 @@
                         "<p>Beyond its vital financial outreach, the Thrift Shop provides help to low-income families by offering quality merchandise at ",
                         "very low cost. It also creates fellowship for volunteers and shoppers who've developed relationships over the years. The shop ",
                         "is open for sales and donations on Tuesday through Saturday, 10 am to 1 pm.</p>",
-                        "<p>The Thrift Shop embodies our call to service in tangible, practical ways, connecting commerce with compassion and stewardship with generosity.</p>"
+                        "<p>The Thrift Shop embodies our call to service in tangible, practical ways, connecting commerce with compassion and stewardship with generosity.</p>",
+                        "</div>",
+                        "<div class=\"flex-1\">",
+                        "<div class=\"video-container\">",
+                        "<video width=\"100%\" height=\"auto\" controls playsinline preload=\"metadata\" poster=\"assets/thrift_shop_christmas-poster.jpg\">",
+                        "<source src=\"assets/thrift_shop_christmas.mp4\" type=\"video/mp4\">",
+                        "Your browser does not support HTML5 video playback.",
+                        "</video>",
+                        "</div>",
+                        "</div>",
+                        "</div>"
                     ]
                 }
             ],
@@ -364,6 +388,10 @@
                 {
                     "src": "assets/organ.png",
                     "alt": "Christ Church Pipe Organ"
+                },
+                {
+                    "src": "assets/church_lessions_and_carols.jpg",
+                    "alt": "Lessons and Carols"
                 }
             ]
         }
