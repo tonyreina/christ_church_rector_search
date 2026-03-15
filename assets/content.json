@@ -4,7 +4,7 @@
             "title": "Welcome",
             "metaTitle": "Welcome • Rector Search",
             "description": "Christ Church Coronado seeks a compassionate rector to lead our friendly Episcopal community in worship, service, and faith formation.",
-            "heroImage": "assets/hero_home.jpg",
+            "heroImage": "assets/church_lent.jpg",
             "heroAlt": "Christ Church Coronado",
             "heroLink": "https://en.wikipedia.org/wiki/Coronado,_California",
             "sections": [
@@ -183,6 +183,14 @@
                 {
                     "src": "assets/kids_advent.jpg",
                     "alt": "Advent"
+                },
+                {
+                    "src": "assets/prayground1.jpg",
+                    "alt": "Prayground 1"
+                },
+                {
+                    "src": "assets/prayground2.jpg",
+                    "alt": "Prayground 2"
                 },
                 {
                     "src": "assets/youth5.jpeg",
