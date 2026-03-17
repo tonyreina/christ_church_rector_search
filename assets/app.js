@@ -1,12 +1,17 @@
 // Slideshow setup for dynamically loaded content
 function setupSlideshows() {
     var slideshows = document.querySelectorAll('.slideshow');
+    console.log('Setting up slideshows, found:', slideshows.length);
     slideshows.forEach(function (slideshow) {
         var slides = slideshow.querySelectorAll('.slide');
+        console.log('Slideshow found with', slides.length, 'slides');
         // Remove any existing active classes
         slides.forEach(slide => slide.classList.remove('active'));
         var current = 0;
-        slides[current].classList.add('active');
+        if (slides.length > 0) {
+            slides[current].classList.add('active');
+            console.log('Set first slide to active');
+        }
         if (slides.length < 2) {
             // Only one image, no interval needed
             if (slideshow._intervalId) clearInterval(slideshow._intervalId);
@@ -237,8 +242,10 @@ function renderPageContent(pageData) {
     // Render slideshow if present and has images
     if (Array.isArray(pageData.slideshow) && pageData.slideshow.length > 0) {
         html += `
-        <div class="slideshow mt-10 fade-in">
-            ${pageData.slideshow.map(img => `<img src="${img.src}" alt="${img.alt}" class="slide" />`).join('')}
+        <div class="cc-panel overflow-hidden mt-10 fade-in">
+            <div class="slideshow">
+                ${pageData.slideshow.map(img => `<img src="${img.src}" alt="${img.alt}" class="slide" />`).join('')}
+            </div>
         </div>
         `;
     }

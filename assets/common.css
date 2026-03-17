@@ -13,7 +13,7 @@
 .slideshow .slide {
     display: none;
     width: 100%;
-    height: auto;
+    height: 400px;
     object-fit: cover;
     border-radius: 12px;
 }
@@ -1174,4 +1174,13 @@ img {
 .info-box p {
     font-size: 0.875rem;
     color: var(--muted);
+}
+
+/* CCDS Featured Image */
+.ccds-featured-image {
+    width: 100%;
+    max-width: 1200px;
+    height: auto;
+    display: block;
+    margin: 20px auto;
 }
