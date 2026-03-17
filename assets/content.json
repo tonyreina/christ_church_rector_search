@@ -281,6 +281,8 @@
                     "kicker": "Christ Church Day School",
                     "heading": "A thriving Episcopal school in the heart of Coronado",
                     "content": [
+                        "<div class=\"flex-content\">",
+                        "<div class=\"flex-1\">",
                         "<p class=\"cc-sub\"><a href=\"https://www.ccds.org/\" target=\"_blank\" rel=\"noopener\" class=\"link\">Christ Church Day School ",
                         "(CCDS)</a> is a vital mission of Christ Church, serving JK–8th grade with 130 students in small classes. ",
                         "Founded in 1957, CCDS provides quality education grounded in Christian values. ",
@@ -293,14 +295,21 @@
                         "<div class=\"stat-card\"><div class=\"stat-label\">Class sizes</div><div class=\"stat-value\">Small (about 14–16)</div></div>",
                         "<div class=\"stat-card\"><div class=\"stat-label\">Founded</div><div class=\"stat-value\">1957</div></div>",
                         "</div>",
-                        "<img src=\"assets/why_ccds.png\" alt=\"Why Christ Church Day School?\" class=\"ccds-featured-image\" />",
                         "<p>Students receive rich specialty programs including Spanish, Music, Physical Education, Art, and Spiritual Nurture. ",
                         "CCDS hosts twice-weekly all-school chapels with Eucharist on Tuesdays and Morning Prayer on Thursdays.</p>",
                         "<p>CCDS keeps the campus alive and vibrant with open houses, back-to-school events, an annual Harvest Festival, ",
                         "movie nights on the lawn, music and talent performances, family nights, pet blessings, Scholastic Book Fairs, ",
                         "and end-of-year celebrations. The school partners frequently with the church on service projects, ",
                         "including our annual Spaghetti Dinner and Thanksgiving Food Drive.</p>",
-                        "<p>Learn more at <a class=\"underline link\" href=\"https://www.ccds.org/\" target=\"_blank\" rel=\"noreferrer\">ccds.org</a>.</p>"
+                        "<p>Learn more at <a class=\"underline link\" href=\"https://www.ccds.org/\" target=\"_blank\" rel=\"noreferrer\">ccds.org</a>.</p>",
+                        "</div>",
+                        "<div class=\"flex-1\">",
+                        "<div class=\"video-container\">",
+                        "<iframe src=\"https://www.loom.com/embed/d249c4f5d8234bff85f5cc086f0fffa6\" frameborder=\"0\" allowfullscreen style=\"width:100%;height:auto;min-height:400px;\"></iframe>",
+                        "</div>",
+                        "</div>",
+                        "</div>",
+                        "<img src=\"assets/why_ccds.png\" alt=\"Why Christ Church Day School?\" class=\"ccds-featured-image\" />"
                     ]
                 }
             ],
