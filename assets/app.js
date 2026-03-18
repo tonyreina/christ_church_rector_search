@@ -208,8 +208,15 @@ function generateHeroSection(pageData) {
             Facebook
           </a>
         </div>
-         <div class="mt-2 text-muted"><a href="assets/2025-Annual-Report-Christ-Church-Coronado.pdf" target="_blank"
-            rel="noopener noreferrer" class="link">Read our 2025 Annual Report</a></div>
+         <div class="mt-2"><a href="assets/2025-Annual-Report-Christ-Church-Coronado.pdf" target="_blank"
+            rel="noopener noreferrer" class="hero-link-btn">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+              <polyline points="14 2 14 8 20 8"></polyline>
+              <line x1="12" y1="11" x2="12" y2="17"></line>
+              <line x1="9" y1="14" x2="15" y2="14"></line>
+            </svg>
+            Read our 2025 Annual Report</a></div>
       </div>
     </div>
   `;
