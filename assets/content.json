@@ -56,7 +56,7 @@
             "title": "A Welcoming Parish Family",
             "metaTitle": "Our Family • Rector Search",
             "description": "Experience the warmth and community of Christ Church Coronado. We are a family united in faith, worship, and service.",
-            "heroImage": "assets/hero_worship.jpg",
+            "heroImage": "assets/community.jpg",
             "heroAlt": "Christ Church Community",
             "sections": [
                 {
@@ -567,10 +567,10 @@
         },
         {
             "href": "#worship",
-            "image": "assets/hero_worship.jpg",
+            "image": "assets/hero_home.jpg",
             "alt": "Worship",
             "category": "Worship",
-            "title": "Prayer, Eucharist, music"
+            "title": "Prayer, Eucharist, Fellowship"
         },
         {
             "href": "#youth_family",
