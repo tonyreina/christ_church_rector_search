@@ -12,14 +12,14 @@
                     "kicker": "Welcome",
                     "heading": "Welcome to <span class=\"font-semibold text-ink\">Christ Church</span>",
                     "content": [
-                        "<p class=\"text-lg font-medium text-ink\">We are a <span class=\"italic\">friendly, inclusive Episcopal community</span> ",
+                        "<p class=\"text-lg font-medium text-ink\">We are a friendly, inclusive Episcopal community ",
                         "in <a href=\"https://www.coronado.ca.us/210/About-Coronado\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"link\">Coronado, California</a>. ",
-                        "Our parish is home to over <span class=\"font-semibold\">200 members</span> from all walks of life, including many ",
+                        "Our parish is home to over 200 members from all walks of life, including many ",
                         "<a href=\"https://en.wikipedia.org/wiki/Naval_Air_Station_North_Island\" target=\"_blank\" rel=\"noopener noreferrer\" ",
-                        "class=\"link\">military families</a>. We value <span class=\"font-semibold\">tradition</span>, <span class=\"italic\">thoughtful worship</span>, ",
-                        "and caring for one another. Our motto \"Bridging Love and Service\" reflects our desire to grow a spiritual community in harmony with our surrounding secular community.</p>",
-                        "<p class=\"text-lg font-medium text-ink\"><a href=\"https://ccds.org\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"link\">Christ Church Day School</a>, ",
-                        "founded in 1957, is the only Episcopal elementary school in the <a href=\"https://edsd.org/\" target=\"_blank\" rel=\"noopener noreferrer\" ",
+                        "class=\"link\">military families</a>. We value tradition, thoughtful worship, ",
+                        "and caring for one another as our God cares for us. Our motto \"Bridging Love and Service\" reflects our desire to mimic Christ by growing a spiritual community in harmony with our surrounding secular community.</p>",
+                        "<p class=\"text-lg font-medium text-ink\"><a href=\"https://ccds.org\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"link\">Christ Church Day School</a> is one of our largest bridges. ",
+                        "Founded in 1957, it is the only Episcopal elementary school in the <a href=\"https://edsd.org/\" target=\"_blank\" rel=\"noopener noreferrer\" ",
                         "class=\"link\">Diocese of San Diego</a>. We are committed to its future and to Christian education for all ages.</p>",
                         "<div class=\"mt-2\"><p class=\"text-lg font-medium text-ink callout-box\">We seek an experienced leader who will work collaboratively with vestry, lay leaders, school, and staff.\n",
                         "We welcome all people and look forward to meeting our next rector. <b>If you feel called, we hope to hear from you.</b></p></div>",
@@ -30,21 +30,132 @@
                     "kicker": "Our Vision",
                     "heading": "Our Hopes for Our Next Rector",
                     "content": [
+                        "We hope to call a leader who embodies Christ's love</span> with humility, compassion, and spiritual depth. ",
+                        "Essential gifts include strong pastoral presence, excellent liturgical leadership, and ",
+                        "preaching that connects the Gospel to everyday life with warmth and clarity. ",
+                        "We value someone who helps newcomers feel truly welcome and who nurtures long-time members with care, ",
+                        "especially in seasons of joy, grief, and transition.</p>",
+                        "</p>Some characteristics of our next rector are ...",
                         "<ul class=\"list-disc list-inside animated-list\" id=\"rector-hopes\">",
-                        "<li>Lead us in service and outreach</li>",
-                        "<li>Grow our youth and family ministry</li>",
-                        "<li>Deepen our relationship with the Day School</li>",
-                        "<li>Welcome new members and enhance faith</li>",
-                        "<li>Support small groups and learning</li>",
-                        "<li>Offer caring support in all seasons</li>",
-                        "<li>Provide faithful stewardship and care</li>",
-                        "<li>Have experience as an able administrator managing staff</li>",
+                        "<li>Discovering new bridges for us in service and outreach</li>",
+                        "<li>Growing our youth and family ministry</li>",
+                        "<li>Deepening our relationship with the Day School</li>",
+                        "<li>Welcoming new members and enhancing faith</li>",
+                        "<li>Supporting small groups and learning</li>",
+                        "<li>Offering caring support in all seasons</li>",
+                        "<li>Providing faithful stewardship and care</li>",
+                        "<li>Having experience as an able administrator managing staff</li>",
                         "</ul>"
                     ]
                 }
             ],
             "slideshow": [],
             "showPhotoHighlights": true
+        },
+        "family": {
+            "title": "A Welcoming Parish Family",
+            "metaTitle": "Our Family • Rector Search",
+            "description": "Experience the warmth and community of Christ Church Coronado. We are a family united in faith, worship, and service.",
+            "heroImage": "assets/hero_worship.jpg",
+            "heroAlt": "Christ Church Community",
+            "sections": [
+                {
+                    "kicker": "Our Parish Family",
+                    "heading": "United in faith, worship, and service",
+                    "content": [
+                        "<p>Christ Church Coronado is more than a congregation—we are God's family in Christ. With over 200 members from all walks of life, we gather to worship together, support one another, and serve our wider community.</p>",
+                        "<p>Our parish family includes young children discovering faith through Godly Play, families growing together through our youth and formation ministries, and long-time members enriching our spiritual life with their wisdom and experience. We are proud to welcome military families, transplants, lifelong Coronado residents, and everyone in between.</p>",
+                        "<p>Whether you're visiting for the first time or you've been part of our community for decades, you belong here. We gather to encounter the Holy Spirit through beautiful liturgy, meaningful fellowship, and shared service to one another and to our neighbors.</p>"
+                    ]
+                },
+                {
+                    "kicker": "Our Community",
+                    "heading": "Where everyone finds a place",
+                    "content": [
+                        "<p>Our parish thrives through the gifts of our people. From those who lead worship to those who serve coffee, from volunteers at our Thrift Shop to families participating in youth groups, we all have a role to play in God's work.</p>",
+                        "<p>We celebrate milestones together—baptisms and confirmations, weddings and anniversaries. We also walk alongside one another through life's challenges, offering pastoral care and prayerful presence in times of grief, loss, and transition.</p>",
+                        "<p>In our shared meals, community events, and worship services, we experience the joy of belonging. We are a community grounded in prayer, nourished by the Eucharist, and sent forth to live out our faith in the wider world.</p>"
+                    ]
+                }
+            ],
+            "slideshow": [
+                {
+                    "src": "assets/worship_congregation.jpg",
+                    "alt": "Parish family worshiping together"
+                },
+                {
+                    "src": "assets/community.jpg",
+                    "alt": "Community"
+                },
+                {
+                    "src": "assets/community2.jpg",
+                    "alt": "Community"
+                },
+                {
+                    "src": "assets/community3.jpg",
+                    "alt": "Community"
+                },
+                {
+                    "src": "assets/community4.jpg",
+                    "alt": "Community"
+                },
+                {
+                    "src": "assets/community5.jpg",
+                    "alt": "Community"
+                },
+                {
+                    "src": "assets/community6.jpg",
+                    "alt": "Community"
+                },
+                {
+                    "src": "assets/community7.webp",
+                    "alt": "Community"
+                },
+                {
+                    "src": "assets/community8.jpg",
+                    "alt": "Community"
+                },
+                {
+                    "src": "assets/community9.jpg",
+                    "alt": "Community"
+                },
+                {
+                    "src": "assets/community14.jpg",
+                    "alt": "Community"
+                },
+                {
+                    "src": "assets/baptism.jpg",
+                    "alt": "Baptism"
+                },
+                {
+                    "src": "assets/youth1.jpeg",
+                    "alt": "Youth and family ministry"
+                },
+                {
+                    "src": "assets/ccds3.jpg",
+                    "alt": "Day School and parish community"
+                },
+                {
+                    "src": "assets/ccds4.jpg",
+                    "alt": "Day School and parish community"
+                },
+                {
+                    "src": "assets/community10.jpg",
+                    "alt": "Community"
+                },
+                {
+                    "src": "assets/community11.jpg",
+                    "alt": "Community"
+                },
+                {
+                    "src": "assets/ccds2.jpg",
+                    "alt": "Day School and parish community"
+                },
+                {
+                    "src": "assets/community12.jpg",
+                    "alt": "Community"
+                }
+            ]
         },
         "worship": {
             "title": "Worship",
@@ -70,26 +181,6 @@
                         "</ul>",
                         "<p>Most of our members value our traditional faith, but some would like more variety in worship, prayers, and music.</p>",
                         "<p>As we look to the future, we seek to honor the liturgical beauty that nourishes us while remaining open to new expressions of praise and prayer.</p>"
-                    ]
-                },
-                {
-                    "kicker": "Liturgical Ministry",
-                    "heading": "Altar Guild at Christ Church",
-                    "content": [
-                        "<p class=\"cc-sub\">The Altar Guild serves as an essential ministry in the life of our parish. ",
-                        "Working reverently and quietly behind the scene, members ensure that the altar is prepared and ",
-                        "set for every worship service. They also assist in preparing the church for special feast days, ",
-                        "baptisms, confirmations, weddings, funerals, and the services of Holy Week and Easter. ",
-                        "Altar Guild duties include caring for the sacred vessels, vestments, and altar linens. ",
-                        "Members polish the brass and silver. They clean and maintain the Sanctuary and Sacristy. ",
-                        "It is the duty of the Altar Guild to order the bread, wine, oil and supplies that are used ",
-                        "for all worship services. In lieu of a Flower Ministry, the Altar Guild coordinates with a ",
-                        "local florist to ensure beautiful flower arrangements that have liturgically correct colors ",
-                        "for weekly and special services. This ministry is grounded in prayer and attention to detail. ",
-                        "The Altar Guild members serve under the direction of the clergy and contribute meaningfully ",
-                        "to the reverence, beauty and smooth flow of our common prayer. Through their faithful service, ",
-                        "the Altar Guild creates a joyful and sacred space where our parish family gathers to encounter ",
-                        "Christ in Word and Sacrament.</p>"
                     ]
                 }
             ],
@@ -468,8 +559,8 @@
     },
     "photoHighlights": [
         {
-            "href": "#index",
-            "image": "assets/hero_home.jpg",
+            "href": "#family",
+            "image": "assets/community.jpg",
             "alt": "Our Church",
             "category": "Our Church",
             "title": "A welcoming parish family"
@@ -504,7 +595,7 @@
         },
         {
             "href": "#day_school",
-            "image": "assets/hero_school.webp",
+            "image": "assets/ccds6.jpg",
             "alt": "Christ Church Day School",
             "category": "Day School",
             "title": "JK–8 • 130 students"

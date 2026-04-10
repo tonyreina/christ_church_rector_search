@@ -23,7 +23,7 @@ function setupSlideshows() {
             slides[current].classList.remove('active');
             current = (current + 1) % slides.length;
             slides[current].classList.add('active');
-        }, 10000);
+        }, 7000);
     });
 }
 // Single Page App for Christ Church Rector Search
@@ -90,6 +90,7 @@ function generateNavigation() {
     const activePage = getActivePage();
     const navItems = [
         { page: 'index', label: 'Welcome' },
+        { page: 'family', label: 'Our Family' },
         { page: 'worship', label: 'Worship' },
         { page: 'youth_family', label: 'Youth & Family' },
         { page: 'service_ministry', label: 'Service Ministry' },
@@ -316,14 +317,9 @@ function renderPhotoHighlights() {
 // ===== MINISTRY PROFILE =====
 const MINISTRY_PROFILES = [
     {
-        title: "Who will we call as our next rector?",
-        pages: ['index'],
-        content: `<p><span class="font-medium">We hope to call a leader who embodies Christ's love</span> with humility, compassion, and spiritual depth. Essential gifts include strong pastoral presence, excellent liturgical leadership, and <span class="font-medium">preaching that connects the Gospel to everyday life</span> with warmth and clarity. We value someone who helps newcomers feel truly welcome and who nurtures long-time members with care, especially in seasons of joy, grief, and transition.</p>`
-    },
-    {
         title: "What we hope for in our next rector.",
         pages: ['index'],
-        content: `<p><span class="font-medium">We need a collaborative leader</span> who listens well, builds trust, and works closely with vestry, lay leaders, and staff. Administrative skill and wise stewardship are essential, as is adaptability in a changing Church. <span class="font-medium">Above all, we seek a rector grounded in prayer and emotional maturity</span>—someone who will help us grow as a supportive community led by the Holy Spirit and rooted in faith, hope, and love.</p>`
+        content: `<p><span class="font-medium">We need a collaborative leader</span> who listens well, builds trust, and works closely with vestry, lay leaders, school, and staff. Administrative skill and wise stewardship are essential, as is adaptability in a changing Church. <span class="font-medium">Above all, we seek a rector grounded in prayer and emotional maturity</span>—someone who will help us grow as a supportive community led by the Holy Spirit and rooted in faith, hope, and love.</p>`
     },
     {
         title: "Supporting diverse worship traditions",
@@ -336,8 +332,13 @@ const MINISTRY_PROFILES = [
         content: `<p>We grow engagement through active ministries and committees, intentionally inviting new voices into shared leadership and discernment. <span class="font-medium">We also work to be visible in the wider community</span>, so our neighbors know who we are and how we seek to follow Jesus. Our partnership with Christ Church Day School is a treasured part of our identity, and we are strengthening youth formation through Godly Play, fellowship, and meaningful learning.</p>`
     },
     {
-        title: "Stewarding our campus and diocesan partnerships",
+        title: "Who will we call as our next rector?",
         pages: ['index'],
+        content: `<p><span class="font-medium">We hope to call a leader who embodies Christ's love</span> with humility, compassion, and spiritual depth. Essential gifts include strong pastoral presence, excellent liturgical leadership, and <span class="font-medium">preaching that connects the Gospel to everyday life</span> with warmth and clarity. We value someone who helps newcomers feel truly welcome and who nurtures long-time members with care, especially in seasons of joy, grief, and transition.</p>`
+    },
+    {
+        title: "Stewarding our campus and diocesan partnerships",
+        pages: ['day_school'],
         content: `<p><span class="font-medium">We care for our 130-year-old campus as a gift entrusted to us</span>, planning responsibly for maintenance and future needs. Finally, we seek deeper relationships across the Diocese, especially with parishes serving immigrant communities, so we can stand with those most in need.</p>`
     },
     {
@@ -372,7 +373,7 @@ const MINISTRY_PROFILES = [
     },
     {
         title: "Formation and hospitality",
-        pages: ['worship', 'index'],
+        pages: ['worship'],
         content: `<p>Weekly Men's Bible Study and lay-led Evening Prayer offer regular opportunities for scripture, reflection, and shared intercession. We also support health of mind and body through offerings such as an on-site yoga class held twice a month.</p>`
     },
     {
@@ -392,7 +393,7 @@ const MINISTRY_PROFILES = [
     },
     {
         title: "Caring for our campus",
-        pages: ['day_school', 'index'],
+        pages: ['day_school'],
         content: `<p>We care for our 130-year-old campus as a gift entrusted to us by past generations and held in trust for those to come. As we plan responsibly for maintenance, growth, and future needs, we do so knowing that this sacred space serves not only Sunday worship but also the daily formation of young hearts and minds throughout the week.</p>`
     },
     {
@@ -449,8 +450,8 @@ function generateMinistryProfile() {
 
     section.style.display = 'block';
 
-    // Random starting index
-    currentProfileIndex = Math.floor(Math.random() * ministryProfileItems.length);
+    // Start with first item
+    currentProfileIndex = 0;
 
     // Generate navigation buttons
     const buttonsHTML = `
@@ -524,26 +525,6 @@ function setupMinistryProfileNavigation() {
     }
 
     startAutoRotate();
-}
-
-// ===== ANIMATED LIST (for rector hopes) =====
-function animateRectorHopes() {
-    const list = document.getElementById('rector-hopes');
-    if (!list) return;
-
-    const items = list.querySelectorAll('li');
-    if (items.length === 0) return;
-
-    let currentIndex = 0;
-
-    function highlightNext() {
-        items.forEach(item => item.classList.remove('active'));
-        items[currentIndex].classList.add('active');
-        currentIndex = (currentIndex + 1) % items.length;
-    }
-
-    highlightNext();
-    setInterval(highlightNext, RECTOR_HOPES_HIGHLIGHT_INTERVAL);
 }
 
 // ===== SCROLL HANDLERS (consolidated) =====
@@ -685,9 +666,6 @@ async function renderPage() {
 
     // Setup observers after content is rendered
     setTimeout(setupObservers, 100);
-
-    // Animate rector hopes list if present
-    setTimeout(animateRectorHopes, 200);
 
     // Scroll to top on page change
     window.scrollTo(0, 0);
