@@ -56,23 +56,29 @@
             "title": "A Welcoming Parish Family",
             "metaTitle": "Our Family • Rector Search",
             "description": "Experience the warmth and community of Christ Church Coronado. We are a family united in faith, worship, and service.",
-            "heroImage": "assets/community.jpg",
+            "heroImage": "assets/congregation2.jpg",
             "heroAlt": "Christ Church Community",
             "sections": [
                 {
                     "kicker": "Our Parish Family",
                     "heading": "United in faith, worship, and service",
                     "content": [
-                        "<p>Christ Church Coronado is more than a congregation—we are God's family in Christ. With over 200 members from all walks of life, we gather to worship together, support one another, and serve our wider community.</p>",
-                        "<p>Our parish family includes young children discovering faith through Godly Play, families growing together through our youth and formation ministries, and long-time members enriching our spiritual life with their wisdom and experience. We are proud to welcome military families, transplants, lifelong Coronado residents, and everyone in between.</p>",
-                        "<p>Whether you're visiting for the first time or you've been part of our community for decades, you belong here. We gather to encounter the Holy Spirit through beautiful liturgy, meaningful fellowship, and shared service to one another and to our neighbors.</p>"
+                        "<p>Christ Church Coronado is more than just a place to attend church—it’s a family rooted in Christ. ",
+                        "With a vibrant community of over 200 members, we come together to worship, care for one another, and serve God beyond our walls. ",
+                        "Our parish brings together people at every stage of life: young children growing their faith through Godly Play, Parish Day School ",
+                        "families practicing Christian values in their lives, adults living their faith through service ministries, and longtime members ",
+                        "who share wisdom and spiritual depth to all.</p></p>We are honored to include military families, newcomers, lifelong Coronado residents, ",
+                        "and everyone in between. Whether you’re visiting for the first time or have called this community home for years, you are ",
+                        "welcome here. Together, we seek the presence of the Holy Spirit through meaningful worship, genuine fellowship, ",
+                        "and a shared commitment to serving one another and our neighbors.</p>"
                     ]
                 },
                 {
                     "kicker": "Our Community",
                     "heading": "Where everyone finds a place",
                     "content": [
-                        "<p>Our parish thrives through the gifts of our people. From those who lead worship to those who serve coffee, from volunteers at our Thrift Shop to families participating in youth groups, we all have a role to play in God's work.</p>",
+                        "<p>Our parish flourishes because of the many gifts shared by our family. Whether leading worship, serving coffee, volunteering ",
+                        "at the Thrift Shop, supporting our youth groups, or teaching in our Day School, each of us plays a meaningful part in God’s work.</p>",
                         "<p>We celebrate milestones together—baptisms and confirmations, weddings and anniversaries. We also walk alongside one another through life's challenges, offering pastoral care and prayerful presence in times of grief, loss, and transition.</p>",
                         "<p>In our shared meals, community events, and worship services, we experience the joy of belonging. We are a community grounded in prayer, nourished by the Eucharist, and sent forth to live out our faith in the wider world.</p>"
                     ]
@@ -150,6 +156,14 @@
                 {
                     "src": "assets/ccds2.jpg",
                     "alt": "Day School and parish community"
+                },
+                {
+                    "src": "assets/congregation1.jpg",
+                    "alt": "Easter 2"
+                },
+                {
+                    "src": "assets/congregation2.jpg",
+                    "alt": "Easter 2"
                 },
                 {
                     "src": "assets/community12.jpg",
@@ -555,12 +569,93 @@
                     "alt": "Lessons and Carols"
                 }
             ]
+        },
+        "rectory": {
+            "title": "The Rectory",
+            "metaTitle": "The Rectory • Rector Search",
+            "description": "The Rectory at Christ Church Coronado is the home of our rector, a central part of parish life and ministry.",
+            "heroImage": "assets/rectory2.jpeg",
+            "heroAlt": "Christ Church Rectory",
+            "sections": [
+                {
+                    "kicker": "The Rectory",
+                    "heading": "A home for our rector",
+                    "content": [
+                        "<p>Christ Church Coronado is blessed to own a rectory available for the rector and their family. The rectory is a spacious two-story home featuring three bedrooms, a living room, den, dining room, an updated kitchen, a garage, and a comfortable patio area in the backyard.</p>",
+                        "<p>Located approximately <a href=\"https://maps.app.goo.gl/MBnDYn73p7P8xnJX6\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"link\">seven blocks from the church</a>, the home is close enough for a pleasant walk or an easy bike ride to the parish campus. This convenient proximity allows for easy accessibility to parish activities and ministries while providing a peaceful residential setting for our rector and their family.</p>",
+                        "<p>The Rectory at Christ Church Coronado serves as more than just a residence—it is a place where our spiritual leader lives, serves, and builds meaningful relationships with our parish community. From pastoral visits and counseling to hosting parish gatherings and welcoming visitors, the Rectory is central to the life and ministry of Christ Church.</p>",
+                        "<p>We invite our next rector to make this home their own, and to use it as a base from which to shepherd our flock, nurture our faith community, and continue the rich tradition of Christ Church Coronado.</p>"
+                    ]
+                }
+            ],
+            "slideshow": [
+                {
+                    "src": "assets/rectory1.jpeg",
+                    "alt": "Rectory 1"
+                },
+                {
+                    "src": "assets/rectory2.jpeg",
+                    "alt": "Rectory 2"
+                },
+                {
+                    "src": "assets/rectory3.jpeg",
+                    "alt": "Rectory 3"
+                },
+                {
+                    "src": "assets/rectory4.jpeg",
+                    "alt": "Rectory 4"
+                },
+                {
+                    "src": "assets/rectory5.jpeg",
+                    "alt": "Rectory 5"
+                },
+                {
+                    "src": "assets/rectory6.jpeg",
+                    "alt": "Rectory 6"
+                },
+                {
+                    "src": "assets/rectory8.webp",
+                    "alt": "Rectory 8"
+                },
+                {
+                    "src": "assets/rectory9.webp",
+                    "alt": "Rectory 9"
+                },
+                {
+                    "src": "assets/rectory10.webp",
+                    "alt": "Rectory 10"
+                },
+                {
+                    "src": "assets/rectory11.webp",
+                    "alt": "Rectory 11"
+                },
+                {
+                    "src": "assets/rectory12.webp",
+                    "alt": "Rectory 12"
+                },
+                {
+                    "src": "assets/rectory13.webp",
+                    "alt": "Rectory 13"
+                },
+                {
+                    "src": "assets/rectory14.webp",
+                    "alt": "Rectory 14"
+                },
+                {
+                    "src": "assets/rectory15.webp",
+                    "alt": "Rectory 15"
+                },
+                {
+                    "src": "assets/rectory7.jpeg",
+                    "alt": "Rectory 7"
+                }
+            ]
         }
     },
     "photoHighlights": [
         {
             "href": "#family",
-            "image": "assets/community.jpg",
+            "image": "assets/congregation2.jpg",
             "alt": "Our Church",
             "category": "Our Church",
             "title": "A welcoming parish family"
@@ -599,6 +694,13 @@
             "alt": "Christ Church Day School",
             "category": "Day School",
             "title": "JK–8 • 130 students"
+        },
+        {
+            "href": "#rectory",
+            "image": "assets/rectory2.jpeg",
+            "alt": "The Rectory",
+            "category": "Rectory",
+            "title": "Home for our rector"
         }
     ]
 }
