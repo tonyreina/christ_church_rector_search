@@ -39,6 +39,15 @@ let autoRotateInterval = null;
 const MINISTRY_PROFILE_ROTATE_INTERVAL = 60000; // 60 seconds
 const RECTOR_HOPES_HIGHLIGHT_INTERVAL = 10000; // 10 seconds
 
+// SVG icons for hero section links, keyed by the "type" field in site.links
+const LINK_ICONS = {
+    website:    `<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>`,
+    livestream: `<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>`,
+    instagram:  `<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>`,
+    facebook:   `<svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>`,
+    pdf:        `<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="12" y1="11" x2="12" y2="17"></line><line x1="9" y1="14" x2="15" y2="14"></line></svg>`
+};
+
 // ===== UTILITY FUNCTIONS =====
 function debounce(func, wait) {
     let timeout;
@@ -88,16 +97,7 @@ function updateMetaTags(pageData) {
 // ===== NAVIGATION =====
 function generateNavigation() {
     const activePage = getActivePage();
-    const navItems = [
-        { page: 'index', label: 'Welcome' },
-        { page: 'family', label: 'Our Family' },
-        { page: 'worship', label: 'Worship' },
-        { page: 'youth_family', label: 'Youth & Family' },
-        { page: 'service_ministry', label: 'Service Ministry' },
-        { page: 'day_school', label: 'Christ Church Day School' },
-        { page: 'thrift_shop', label: 'Thrift Shop' },
-        { page: 'music_ministry', label: 'Music Ministry' },
-    ];
+    const navItems = contentData.nav;
 
     const desktopNav = document.getElementById('desktopNav');
     const mobileNav = document.getElementById('mobileNav');
@@ -145,12 +145,12 @@ function generateHeroSection(pageData) {
     if (!heroContainer) return;
 
     const needsDarkerOverlay = ['youth_family', 'thrift_shop', 'music_ministry'].includes(getActivePage());
-    const overlayClass = needsDarkerOverlay
-        ? 'hero-overlay-dark'
-        : 'hero-overlay';
+    const overlayClass = needsDarkerOverlay ? 'hero-overlay-dark' : 'hero-overlay';
 
-    const heroLinkHTML =
-        'Christ Episcopal Church in Coronado, California — a vibrant, worshiping, beachside community shaped by prayer, fellowship, and service.';
+    const site = contentData.site;
+    const linksHTML = site.links.map(link =>
+        `<a class="hero-link-btn" href="${link.url}" target="_blank" rel="noopener noreferrer">${LINK_ICONS[link.type] || ''}${link.label}</a>`
+    ).join('');
 
     heroContainer.innerHTML = `
     <div class="grid grid-5-3-2 h-full">
@@ -158,66 +158,30 @@ function generateHeroSection(pageData) {
         <img src="${pageData.heroImage}" alt="${pageData.heroAlt}" class="parallax-img absolute inset-0 z-0" loading="eager" />
         <div class="absolute inset-0 z-10 ${overlayClass}"></div>
         <div class="absolute left-6 bottom-6 right-6 z-20">
-          <div class="text-white text-sm uppercase tracking-wide">Bridging Love &amp; Service</div>
+          <div class="text-white text-sm uppercase tracking-wide">${site.tagline}</div>
           <h1 class="text-white text-3xl md-text-4xl font-semibold tracking-tight mt-2">Rector Search</h1>
-          <p class="text-white-90 mt-2 max-w-xl">${heroLinkHTML}</p>
+          <p class="text-white-90 mt-2 max-w-xl">${site.heroDescription}</p>
         </div>
       </div>
       <div class="hero-info-container p-6 md-p-8">
         <div class="text-sm uppercase tracking-wide text-muted">Visit us</div>
-        <div class="mt-2 font-semibold text-ink">Sundays at 8 & 10 AM</div>
-        <div class="text-muted mt-1">Holy Eucharist • All are welcome</div>
+        <div class="mt-2 font-semibold text-ink">${site.worshipLabel}</div>
+        <div class="text-muted mt-1">${site.worshipSubtitle}</div>
         <div class="mt-4 hero-contact-card">
           <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-sage flex-shrink-0 mt-0.5">
             <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
             <circle cx="12" cy="10" r="3"></circle>
           </svg>
           <div class="flex-1">
-            <a href="https://www.google.com/maps/place/1114+Ninth+Street,+Coronado,+CA+92118" target="_blank" rel="noopener noreferrer" class="text-ink font-medium hover-underline">1114 Ninth Street</a>
-            <div class="text-muted">Coronado, CA 92118</div>
-            <a href="tel:+16194354561" class="text-muted hover-underline">(619) 435-4561</a>
+            <a href="${site.address.mapsUrl}" target="_blank" rel="noopener noreferrer" class="text-ink font-medium hover-underline">${site.address.street}</a>
+            <div class="text-muted">${site.address.city}</div>
+            <a href="${site.phone.tel}" class="text-muted hover-underline">${site.phone.display}</a>
           </div>
           <img src="assets/logo.png" alt="Christ Church Logo" class="flex-shrink-0 self-center logo-img" loading="lazy" />
         </div>
         <div class="mt-5 flex flex-wrap gap-2">
-          <a class="hero-link-btn" href="https://christchurchcoronado.org/news-and-events" target="_blank" rel="noreferrer">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <circle cx="12" cy="12" r="10"></circle>
-              <line x1="2" y1="12" x2="22" y2="12"></line>
-              <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
-            </svg>
-            Website
-          </a>
-          <a class="hero-link-btn" href="https://christchurchcoronado.org/live-stream" target="_blank" rel="noreferrer">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <polygon points="5 3 19 12 5 21 5 3"></polygon>
-            </svg>
-            Live Stream
-          </a>
-          <a class="hero-link-btn" href="https://www.instagram.com/nadochristchurch" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
-              <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
-              <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
-            </svg>
-            Instagram
-          </a>
-          <a class="hero-link-btn" href="https://www.facebook.com/christchurchcoronado/" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-              <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
-            </svg>
-            Facebook
-          </a>
+          ${linksHTML}
         </div>
-         <div class="mt-2"><a href="assets/2025-Annual-Report-Christ-Church-Coronado.pdf" target="_blank"
-            rel="noopener noreferrer" class="hero-link-btn">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
-              <polyline points="14 2 14 8 20 8"></polyline>
-              <line x1="12" y1="11" x2="12" y2="17"></line>
-              <line x1="9" y1="14" x2="15" y2="14"></line>
-            </svg>
-            Read our 2025 Annual Report</a></div>
       </div>
     </div>
   `;
@@ -315,123 +279,7 @@ function renderPhotoHighlights() {
 }
 
 // ===== MINISTRY PROFILE =====
-const MINISTRY_PROFILES = [
-    {
-        title: "What we hope for in our next rector.",
-        pages: ['index'],
-        content: `<p><span class="font-medium">We need a collaborative leader</span> who listens well, builds trust, and works closely with vestry, lay leaders, school, and staff. Administrative skill and wise stewardship are essential, as is adaptability in a changing Church. <span class="font-medium">Above all, we seek a rector grounded in prayer and emotional maturity</span>—someone who will help us grow as a supportive community led by the Holy Spirit and rooted in faith, hope, and love.</p>`
-    },
-    {
-        title: "Supporting diverse worship traditions",
-        pages: ['index'],
-        content: `<p><span class="font-medium">Christ Church welcomes all of God's children with hope and openness as we prepare for the future.</span> We support worship and pastoral care through dedicated parishioners, strengthened by clergy guidance, and we offer both Rite I and Rite II so people can worship in the tradition that best nourishes them.</p>`
-    },
-    {
-        title: "Growing engagement and community visibility",
-        pages: ['index'],
-        content: `<p>We grow engagement through active ministries and committees, intentionally inviting new voices into shared leadership and discernment. <span class="font-medium">We also work to be visible in the wider community</span>, so our neighbors know who we are and how we seek to follow Jesus. Our partnership with Christ Church Day School is a treasured part of our identity, and we are strengthening youth formation through Godly Play, fellowship, and meaningful learning.</p>`
-    },
-    {
-        title: "Who will we call as our next rector?",
-        pages: ['index'],
-        content: `<p><span class="font-medium">We hope to call a leader who embodies Christ's love</span> with humility, compassion, and spiritual depth. Essential gifts include strong pastoral presence, excellent liturgical leadership, and <span class="font-medium">preaching that connects the Gospel to everyday life</span> with warmth and clarity. We value someone who helps newcomers feel truly welcome and who nurtures long-time members with care, especially in seasons of joy, grief, and transition.</p>`
-    },
-    {
-        title: "Stewarding our campus and diocesan partnerships",
-        pages: ['day_school'],
-        content: `<p><span class="font-medium">We care for our 130-year-old campus as a gift entrusted to us</span>, planning responsibly for maintenance and future needs. Finally, we seek deeper relationships across the Diocese, especially with parishes serving immigrant communities, so we can stand with those most in need.</p>`
-    },
-    {
-        title: "Serving beyond our parish",
-        pages: ['service_ministry'],
-        content: `<p>Our Service Ministry helps our parish live out a faith that is truly active and visible. James 2:17 says, "So also faith by itself, if it does not have works, is dead." Guided by that call, we raise funds for <a href="https://vjkids.org/" target="_blank" rel="noopener noreferrer" class="underline">Vida Joven</a> orphanages in Mexico through our annual Cinco de Mayo dinner. We also provide backpacks and school supplies for children at the start of the school year.</p>`
-    },
-    {
-        title: "Caring for our neighbors",
-        pages: ['service_ministry', 'thrift_shop'],
-        content: `<p>In recent years, we revived a longtime tradition of offering practical care to neighbors experiencing homelessness by equipping parishioners with small gift bags of essentials to share with dignity and kindness. Our Thrift Shop further extends this outreach. It is a true community ministry, with volunteers and donors from well beyond our congregation.</p>`
-    },
-    {
-        title: "Peace & Justice ministry",
-        pages: ['service_ministry'],
-        content: `<p>We stay connected and engaged through our weekly newsletter, <a href="https://christchurchcoronado.org/news-and-events" target="_blank">Grace Notes</a>, which highlights opportunities to serve in the wider community. In addition, our Peace &amp; Justice Committee supports education and advocacy on issues such as housing, ocean pollution, immigration, and LGBTQ protections and rights, helping us respond thoughtfully and faithfully to our neighbors' needs.</p>`
-    },
-    {
-        title: "Sacred Ground & community organizing",
-        pages: ['service_ministry'],
-        content: `<p>In the past five years, one of our most significant new ministries has been the formation of our Peace &amp; Justice Committee. During COVID, parishioners participated in the Episcopal Church's Sacred Ground program, which deepened our commitment to faithful action and honest conversation. From that work, we sensed a call to engage issues affecting our neighbors, and we joined the <a href="https://sdop.org/" target="_blank" rel="noopener noreferrer" class="underline">San Diego Organizing Project (SDOP)</a>, a non-partisan, multi-faith network. Through listening and discernment, we focused first on housing, homelessness, and ocean pollution, supporting efforts such as renter protections, housing initiatives, and practical support for the unhoused.</p>`
-    },
-    {
-        title: "Faithful accompaniment for migrants",
-        pages: ['service_ministry'],
-        content: `<p>More recently, we have felt a clear call toward immigration and refugee support. We have hosted Home Meetings, participated in forums and rallies, and held discussions on issues including refugee resettlement. In collaboration with Our Lady of Guadalupe Church and SDOP, we now support the FAITH program (Faithful Accompaniment in Trust &amp; Hope), offering moral and prayerful presence for migrants at court hearings and related sites.</p>`
-    },
-    {
-        title: "Worship, prayer, and community life",
-        pages: ['worship', 'music_ministry'],
-        content: `<p>Christ Church is a loving, Spirit-filled community grounded in worship, prayer, and relationships. We are nourished through thoughtful liturgy, beautiful music, and gathering at the Lord's Table. Fellowship also matters to us: shared meals and parish gatherings deepen connection and remind us we do not walk alone. We care for one another's spiritual, emotional, and physical well-being through formation, prayer, and community life.</p>`
-    },
-    {
-        title: "Formation and hospitality",
-        pages: ['worship'],
-        content: `<p>Weekly Men's Bible Study and lay-led Evening Prayer offer regular opportunities for scripture, reflection, and shared intercession. We also support health of mind and body through offerings such as an on-site yoga class held twice a month.</p>`
-    },
-    {
-        title: "Hospitality and service",
-        pages: ['service_ministry', 'thrift_shop'],
-        content: `<p>Beyond our parish, we extend care through hospitality by opening our facilities to youth events, scouting groups, arts performances, fundraisers, and Alcoholics Anonymous meetings. Our all-volunteer Thrift Shop is a ministry of compassion that provides affordable, high-quality goods and distributes over $100,000 annually to ministries locally and throughout the wider Church.</p>`
-    },
-    {
-        title: "Our parish-school partnership",
-        pages: ['day_school'],
-        content: `<p>Our partnership with Christ Church Day School is a treasured and defining part of our parish identity. For 70 years, we have shared our campus, our worship life, and our commitment to Christian formation with students and families who bring energy, diversity, and joy to our community. We believe this partnership strengthens both church and school. Students participate in weekly chapels, building early connections to Episcopal worship and tradition.</p>`
-    },
-    {
-        title: "Building relationships across generations",
-        pages: ['day_school'],
-        content: `<p>Parents and faculty often join parish events, deepening relationships across generations. Service projects unite school families and parishioners in common mission. Our Day School chaplain serves both communities, weaving together formation, pastoral care, and spiritual nurture.</p>`
-    },
-    {
-        title: "Caring for our campus",
-        pages: ['day_school'],
-        content: `<p>We care for our 130-year-old campus as a gift entrusted to us by past generations and held in trust for those to come. As we plan responsibly for maintenance, growth, and future needs, we do so knowing that this sacred space serves not only Sunday worship but also the daily formation of young hearts and minds throughout the week.</p>`
-    },
-    {
-        title: "Ministry as Christ's hands and feet",
-        pages: ['service_ministry'],
-        content: `<p>We invite everyone to share in ministry as we seek to be Christ's "hands and feet" in the world. Parishioners serve our neighbors through outreach that meets real needs with dignity and care. We support St. Mark's kitchen and prepare "Blessings in a Bag" with snacks, water, and handmade hats, gloves, or scarves to offer those living on the streets. These remind our neighbors that they are seen and loved by God the Father, Son, and Spirit.</p>`
-    },
-    {
-        title: "Prayer and belonging for all",
-        pages: ['worship'],
-        content: `<p>We also create space for prayer and belonging. Our mid-week, lay-led Evening Prayer service is intentionally welcoming and nonjudgmental, with opportunities for people to speak names and concerns aloud. In seasons like Lent, we gather for Stations of the Cross and a lecture series, sharing a simple meal and deepening fellowship.</p>`
-    },
-    {
-        title: "Witnessing to inclusive love",
-        pages: ['service_ministry'],
-        content: `<p>Our congregation participates in the San Diego Pride celebration alongside others in the Diocese, praying at the Cathedral and witnessing to God's inclusive love. We support <a href="https://vjkids.org/" target="_blank" rel="noopener noreferrer" class="underline">Vida Joven</a> orphanages in Mexico through fundraising that helps provide food and care.</p>`
-    },
-    {
-        title: "Standing with migrants in court",
-        pages: ['service_ministry'],
-        content: `<p>Through our Peace and Justice Ministry, we educate ourselves about suffering at the border and offer prayerful presence for those facing immigration court proceedings, standing as compassionate witnesses and reminding people they are not alone.</p>`
-    },
-    {
-        title: "The Thrift Shop ministry",
-        pages: ['thrift_shop'],
-        content: `<p>Our volunteer-run Thrift Shop is another vital ministry. It offers affordable clothing and household goods to the larger community while generating annual support for staff, parish ministries, local organizations, and scholarships. It is entirely staffed by volunteers and is known as a place of warmth, generosity, and good humor.</p>`
-    },
-    {
-        title: "Growing youth formation",
-        pages: ['youth_family'],
-        content: `<p>We are encouraged by new life in our ministries: our youth programs are rebuilding with the hiring of <a href="https://www.buzzsprout.com/94924/episodes/18402328-the-tenth-day-of-christmas-with-leighton-jones-12-days-of-god-sightings-on-faith-to-go" target="_blank" rel="noopener">Leighton Jones</a>, our new Youth Minister and Day School chaplain. We are nurturing the next generation through thoughtful Christian formation that invites wonder, questions, and belonging.</p>`
-    },
-    {
-        title: "Our vision for youth and families",
-        pages: ['youth_family'],
-        content: `<ul class="list-disc list-inside"><li>Regular Sunday School and youth gatherings that build friendships rooted in faith</li><li>Godly Play sessions that help children encounter scripture through story and wonder</li><li>Service opportunities that connect young people to Christ's mission in the world</li><li>Intergenerational worship and fellowship that strengthens the whole parish family</li><li>Deepening partnerships with Christ Church Day School for shared formation and worship</li><li>Creating space where young people feel genuinely seen, heard, and valued</li><li>Supporting parents and families as they nurture faith at home</li></ul>`
-    }
-];
+// Ministry profile cards are defined in assets/content.json under "ministryProfiles".
 
 function generateMinistryProfile() {
     const activePage = getActivePage();
@@ -441,7 +289,7 @@ function generateMinistryProfile() {
     if (!container || !section) return;
 
     // Filter items for current page
-    ministryProfileItems = MINISTRY_PROFILES.filter(item => item.pages.includes(activePage));
+    ministryProfileItems = contentData.ministryProfiles.filter(item => item.pages.includes(activePage));
 
     if (ministryProfileItems.length === 0) {
         section.style.display = 'none';
@@ -472,7 +320,7 @@ function generateMinistryProfile() {
     <div class="ministry-profile-item ${index === currentProfileIndex ? 'active' : ''} cc-callout p-6 md-p-7" data-index="${index}">
       <div class="text-sm uppercase tracking-wide text-muted">From our Ministry Profile</div>
       <h3 class="text-2xl font-semibold tracking-tight mt-2">${item.title}</h3>
-      <p class="text-muted leading-relaxed mt-3">${item.content}</p>
+      <div class="text-muted leading-relaxed mt-3">${item.content}</div>
     </div>
   `).join('');
 

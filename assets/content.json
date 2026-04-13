@@ -1,4 +1,246 @@
 {
+    "site": {
+        "tagline": "Bridging Love & Service",
+        "heroDescription": "Christ Episcopal Church in Coronado, California — a vibrant, worshiping, beachside community shaped by prayer, fellowship, and service.",
+        "worshipLabel": "Sundays at 8 & 10 AM",
+        "worshipSubtitle": "Holy Eucharist • All are welcome",
+        "address": {
+            "street": "1114 Ninth Street",
+            "city": "Coronado, CA 92118",
+            "mapsUrl": "https://www.google.com/maps/place/1114+Ninth+Street,+Coronado,+CA+92118"
+        },
+        "phone": {
+            "display": "(619) 435-4561",
+            "tel": "tel:+16194354561"
+        },
+        "links": [
+            {
+                "type": "website",
+                "label": "Website",
+                "url": "https://christchurchcoronado.org/news-and-events"
+            },
+            {
+                "type": "livestream",
+                "label": "Live Stream",
+                "url": "https://christchurchcoronado.org/live-stream"
+            },
+            {
+                "type": "instagram",
+                "label": "Instagram",
+                "url": "https://www.instagram.com/nadochristchurch"
+            },
+            {
+                "type": "facebook",
+                "label": "Facebook",
+                "url": "https://www.facebook.com/christchurchcoronado/"
+            },
+            {
+                "type": "pdf",
+                "label": "Read our 2025 Annual Report",
+                "url": "assets/2025-Annual-Report-Christ-Church-Coronado.pdf"
+            }
+        ]
+    },
+    "nav": [
+        {
+            "page": "index",
+            "label": "Welcome"
+        },
+        {
+            "page": "family",
+            "label": "Our Family"
+        },
+        {
+            "page": "worship",
+            "label": "Worship"
+        },
+        {
+            "page": "youth_family",
+            "label": "Youth & Family"
+        },
+        {
+            "page": "service_ministry",
+            "label": "Service Ministry"
+        },
+        {
+            "page": "day_school",
+            "label": "Christ Church Day School"
+        },
+        {
+            "page": "thrift_shop",
+            "label": "Thrift Shop"
+        },
+        {
+            "page": "music_ministry",
+            "label": "Music Ministry"
+        }
+    ],
+    "ministryProfiles": [
+        {
+            "title": "What we hope for in our next rector.",
+            "pages": [
+                "index"
+            ],
+            "content": "<p><span class='font-medium'>We need a collaborative leader</span> who listens well, builds trust, and works closely with vestry, lay leaders, school, and staff. Administrative skill and wise stewardship are essential, as is adaptability in a changing Church. <span class='font-medium'>Above all, we seek a rector grounded in prayer and emotional maturity</span>—someone who will help us grow as a supportive community led by the Holy Spirit and rooted in faith, hope, and love.</p>"
+        },
+        {
+            "title": "Supporting diverse worship traditions",
+            "pages": [
+                "index"
+            ],
+            "content": "<p><span class='font-medium'>Christ Church welcomes all of God's children with hope and openness as we prepare for the future.</span> We support worship and pastoral care through dedicated parishioners, strengthened by clergy guidance, and we offer both Rite I and Rite II so people can worship in the tradition that best nourishes them.</p>"
+        },
+        {
+            "title": "Growing engagement and community visibility",
+            "pages": [
+                "index"
+            ],
+            "content": "<p>We grow engagement through active ministries and committees, intentionally inviting new voices into shared leadership and discernment. <span class='font-medium'>We also work to be visible in the wider community</span>, so our neighbors know who we are and how we seek to follow Jesus. Our partnership with Christ Church Day School is a treasured part of our identity, and we are strengthening youth formation through Godly Play, fellowship, and meaningful learning.</p>"
+        },
+        {
+            "title": "Who will we call as our next rector?",
+            "pages": [
+                "index"
+            ],
+            "content": "<p><span class='font-medium'>We hope to call a leader who embodies Christ's love</span> with humility, compassion, and spiritual depth. Essential gifts include strong pastoral presence, excellent liturgical leadership, and <span class='font-medium'>preaching that connects the Gospel to everyday life</span> with warmth and clarity. We value someone who helps newcomers feel truly welcome and who nurtures long-time members with care, especially in seasons of joy, grief, and transition.</p>"
+        },
+        {
+            "title": "Stewarding our campus and diocesan partnerships",
+            "pages": [
+                "day_school"
+            ],
+            "content": "<p><span class='font-medium'>We care for our 130-year-old campus as a gift entrusted to us</span>, planning responsibly for maintenance and future needs. Finally, we seek deeper relationships across the Diocese, especially with parishes serving immigrant communities, so we can stand with those most in need.</p>"
+        },
+        {
+            "title": "Serving beyond our parish",
+            "pages": [
+                "service_ministry"
+            ],
+            "content": "<p>Our Service Ministry helps our parish live out a faith that is truly active and visible. James 2:17 says, \"So also faith by itself, if it does not have works, is dead.\" Guided by that call, we raise funds for <a href='https://vjkids.org/' target='_blank' rel='noopener noreferrer' class='underline'>Vida Joven</a> orphanages in Mexico through our annual Cinco de Mayo dinner. We also provide backpacks and school supplies for children at the start of the school year.</p>"
+        },
+        {
+            "title": "Caring for our neighbors",
+            "pages": [
+                "service_ministry",
+                "thrift_shop"
+            ],
+            "content": "<p>In recent years, we revived a longtime tradition of offering practical care to neighbors experiencing homelessness by equipping parishioners with small gift bags of essentials to share with dignity and kindness. Our Thrift Shop further extends this outreach. It is a true community ministry, with volunteers and donors from well beyond our congregation.</p>"
+        },
+        {
+            "title": "Peace & Justice ministry",
+            "pages": [
+                "service_ministry"
+            ],
+            "content": "<p>We stay connected and engaged through our weekly newsletter, <a href='https://christchurchcoronado.org/news-and-events' target='_blank'>Grace Notes</a>, which highlights opportunities to serve in the wider community. In addition, our Peace &amp; Justice Committee supports education and advocacy on issues such as housing, ocean pollution, immigration, and LGBTQ protections and rights, helping us respond thoughtfully and faithfully to our neighbors' needs.</p>"
+        },
+        {
+            "title": "Sacred Ground & community organizing",
+            "pages": [
+                "service_ministry"
+            ],
+            "content": "<p>In the past five years, one of our most significant new ministries has been the formation of our Peace &amp; Justice Committee. During COVID, parishioners participated in the Episcopal Church's Sacred Ground program, which deepened our commitment to faithful action and honest conversation. From that work, we sensed a call to engage issues affecting our neighbors, and we joined the <a href='https://sdop.org/' target='_blank' rel='noopener noreferrer' class='underline'>San Diego Organizing Project (SDOP)</a>, a non-partisan, multi-faith network. Through listening and discernment, we focused first on housing, homelessness, and ocean pollution, supporting efforts such as renter protections, housing initiatives, and practical support for the unhoused.</p>"
+        },
+        {
+            "title": "Faithful accompaniment for migrants",
+            "pages": [
+                "service_ministry"
+            ],
+            "content": "<p>More recently, we have felt a clear call toward immigration and refugee support. We have hosted Home Meetings, participated in forums and rallies, and held discussions on issues including refugee resettlement. In collaboration with Our Lady of Guadalupe Church and SDOP, we now support the FAITH program (Faithful Accompaniment in Trust &amp; Hope), offering moral and prayerful presence for migrants at court hearings and related sites.</p>"
+        },
+        {
+            "title": "Worship, prayer, and community life",
+            "pages": [
+                "worship",
+                "music_ministry"
+            ],
+            "content": "<p>Christ Church is a loving, Spirit-filled community grounded in worship, prayer, and relationships. We are nourished through thoughtful liturgy, beautiful music, and gathering at the Lord's Table. Fellowship also matters to us: shared meals and parish gatherings deepen connection and remind us we do not walk alone. We care for one another's spiritual, emotional, and physical well-being through formation, prayer, and community life.</p>"
+        },
+        {
+            "title": "Formation and hospitality",
+            "pages": [
+                "worship"
+            ],
+            "content": "<p>Weekly Men's Bible Study and lay-led Evening Prayer offer regular opportunities for scripture, reflection, and shared intercession. We also support health of mind and body through offerings such as an on-site yoga class held twice a month.</p>"
+        },
+        {
+            "title": "Hospitality and service",
+            "pages": [
+                "service_ministry",
+                "thrift_shop"
+            ],
+            "content": "<p>Beyond our parish, we extend care through hospitality by opening our facilities to youth events, scouting groups, arts performances, fundraisers, and Alcoholics Anonymous meetings. Our all-volunteer Thrift Shop is a ministry of compassion that provides affordable, high-quality goods and distributes over $100,000 annually to ministries locally and throughout the wider Church.</p>"
+        },
+        {
+            "title": "Our parish-school partnership",
+            "pages": [
+                "day_school"
+            ],
+            "content": "<p>Our partnership with Christ Church Day School is a treasured and defining part of our parish identity. For 70 years, we have shared our campus, our worship life, and our commitment to Christian formation with students and families who bring energy, diversity, and joy to our community. We believe this partnership strengthens both church and school. Students participate in weekly chapels, building early connections to Episcopal worship and tradition.</p>"
+        },
+        {
+            "title": "Building relationships across generations",
+            "pages": [
+                "day_school"
+            ],
+            "content": "<p>Parents and faculty often join parish events, deepening relationships across generations. Service projects unite school families and parishioners in common mission. Our Day School chaplain serves both communities, weaving together formation, pastoral care, and spiritual nurture.</p>"
+        },
+        {
+            "title": "Caring for our campus",
+            "pages": [
+                "day_school"
+            ],
+            "content": "<p>We care for our 130-year-old campus as a gift entrusted to us by past generations and held in trust for those to come. As we plan responsibly for maintenance, growth, and future needs, we do so knowing that this sacred space serves not only Sunday worship but also the daily formation of young hearts and minds throughout the week.</p>"
+        },
+        {
+            "title": "Ministry as Christ's hands and feet",
+            "pages": [
+                "service_ministry"
+            ],
+            "content": "<p>We invite everyone to share in ministry as we seek to be Christ's \"hands and feet\" in the world. Parishioners serve our neighbors through outreach that meets real needs with dignity and care. We support St. Mark's kitchen and prepare \"Blessings in a Bag\" with snacks, water, and handmade hats, gloves, or scarves to offer those living on the streets. These remind our neighbors that they are seen and loved by God the Father, Son, and Spirit.</p>"
+        },
+        {
+            "title": "Prayer and belonging for all",
+            "pages": [
+                "worship"
+            ],
+            "content": "<p>We also create space for prayer and belonging. Our mid-week, lay-led Evening Prayer service is intentionally welcoming and nonjudgmental, with opportunities for people to speak names and concerns aloud. In seasons like Lent, we gather for Stations of the Cross and a lecture series, sharing a simple meal and deepening fellowship.</p>"
+        },
+        {
+            "title": "Witnessing to inclusive love",
+            "pages": [
+                "service_ministry"
+            ],
+            "content": "<p>Our congregation participates in the San Diego Pride celebration alongside others in the Diocese, praying at the Cathedral and witnessing to God's inclusive love. We support <a href='https://vjkids.org/' target='_blank' rel='noopener noreferrer' class='underline'>Vida Joven</a> orphanages in Mexico through fundraising that helps provide food and care.</p>"
+        },
+        {
+            "title": "Standing with migrants in court",
+            "pages": [
+                "service_ministry"
+            ],
+            "content": "<p>Through our Peace and Justice Ministry, we educate ourselves about suffering at the border and offer prayerful presence for those facing immigration court proceedings, standing as compassionate witnesses and reminding people they are not alone.</p>"
+        },
+        {
+            "title": "The Thrift Shop ministry",
+            "pages": [
+                "thrift_shop"
+            ],
+            "content": "<p>Our volunteer-run Thrift Shop is another vital ministry. It offers affordable clothing and household goods to the larger community while generating annual support for staff, parish ministries, local organizations, and scholarships. It is entirely staffed by volunteers and is known as a place of warmth, generosity, and good humor.</p>"
+        },
+        {
+            "title": "Growing youth formation",
+            "pages": [
+                "youth_family"
+            ],
+            "content": "<p>We are encouraged by new life in our ministries: our youth programs are rebuilding with the hiring of <a href='https://www.buzzsprout.com/94924/episodes/18402328-the-tenth-day-of-christmas-with-leighton-jones-12-days-of-god-sightings-on-faith-to-go' target='_blank' rel='noopener'>Leighton Jones</a>, our new Youth Minister and Day School chaplain. We are nurturing the next generation through thoughtful Christian formation that invites wonder, questions, and belonging.</p>"
+        },
+        {
+            "title": "Our vision for youth and families",
+            "pages": [
+                "youth_family"
+            ],
+            "content": "<ul class='list-disc list-inside'><li>Regular Sunday School and youth gatherings that build friendships rooted in faith</li><li>Godly Play sessions that help children encounter scripture through story and wonder</li><li>Service opportunities that connect young people to Christ's mission in the world</li><li>Intergenerational worship and fellowship that strengthens the whole parish family</li><li>Deepening partnerships with Christ Church Day School for shared formation and worship</li><li>Creating space where young people feel genuinely seen, heard, and valued</li><li>Supporting parents and families as they nurture faith at home</li></ul>"
+        }
+    ],
     "pages": {
         "index": {
             "title": "Welcome",
@@ -10,42 +252,21 @@
             "sections": [
                 {
                     "kicker": "Welcome",
-                    "heading": "Welcome to <span class=\"font-semibold text-ink\">Christ Church</span>",
+                    "heading": "Welcome to <span class='font-semibold text-ink'>Christ Church</span>",
                     "content": [
-                        "<p class=\"text-lg font-medium text-ink\">We are a friendly, inclusive Episcopal community ",
-                        "in <a href=\"https://www.coronado.ca.us/210/About-Coronado\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"link\">Coronado, California</a>. ",
-                        "Our parish is home to over 200 members from all walks of life, including many ",
-                        "<a href=\"https://en.wikipedia.org/wiki/Naval_Air_Station_North_Island\" target=\"_blank\" rel=\"noopener noreferrer\" ",
-                        "class=\"link\">military families</a>. We value tradition, thoughtful worship, ",
-                        "and caring for one another as our God cares for us. Our motto \"Bridging Love and Service\" reflects our desire to mimic Christ by growing a spiritual community in harmony with our surrounding secular community.</p>",
-                        "<p class=\"text-lg font-medium text-ink\"><a href=\"https://ccds.org\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"link\">Christ Church Day School</a> is one of our largest bridges. ",
-                        "Founded in 1957, it is the only Episcopal elementary school in the <a href=\"https://edsd.org/\" target=\"_blank\" rel=\"noopener noreferrer\" ",
-                        "class=\"link\">Diocese of San Diego</a>. We are committed to its future and to Christian education for all ages.</p>",
-                        "<div class=\"mt-2\"><p class=\"text-lg font-medium text-ink callout-box\">We seek an experienced leader who will work collaboratively with vestry, lay leaders, school, and staff.\n",
-                        "We welcome all people and look forward to meeting our next rector. <b>If you feel called, we hope to hear from you.</b></p></div>",
-                        "<p class=\"font-medium text-ink italic text-lg\">✞ The People of Christ Church</p>"
+                        "<p class='text-lg font-medium text-ink'>We are a friendly, inclusive Episcopal community in <a href='https://www.coronado.ca.us/210/About-Coronado' target='_blank' rel='noopener noreferrer' class='link'>Coronado, California</a>. Our parish is home to over 200 members from all walks of life, including many <a href='https://en.wikipedia.org/wiki/Naval_Air_Station_North_Island' target='_blank' rel='noopener noreferrer' class='link'>military families</a>. We value tradition, thoughtful worship, and caring for one another as our God cares for us. Our motto \"Bridging Love and Service\" reflects our desire to mimic Christ by growing a spiritual community in harmony with our surrounding secular community.</p>",
+                        "<p class='text-lg font-medium text-ink'><a href='https://ccds.org' target='_blank' rel='noopener noreferrer' class='link'>Christ Church Day School</a> is one of our largest bridges. Founded in 1957, it is the only Episcopal elementary school in the <a href='https://edsd.org/' target='_blank' rel='noopener noreferrer' class='link'>Diocese of San Diego</a>. We are committed to its future and to Christian education for all ages.</p>",
+                        "<div class='mt-2'><p class='text-lg font-medium text-ink callout-box'>We seek an experienced leader who will work collaboratively with vestry, lay leaders, school, and staff. We welcome all people and look forward to meeting our next rector. <b>If you feel called, we hope to hear from you.</b></p></div>",
+                        "<p class='font-medium text-ink italic text-lg'>✞ The People of Christ Church</p>"
                     ]
                 },
                 {
                     "kicker": "Our Vision",
                     "heading": "Our Hopes for Our Next Rector",
                     "content": [
-                        "We hope to call a leader who embodies Christ's love</span> with humility, compassion, and spiritual depth. ",
-                        "Essential gifts include strong pastoral presence, excellent liturgical leadership, and ",
-                        "preaching that connects the Gospel to everyday life with warmth and clarity. ",
-                        "We value someone who helps newcomers feel truly welcome and who nurtures long-time members with care, ",
-                        "especially in seasons of joy, grief, and transition.</p>",
-                        "</p>Some characteristics of our next rector are ...",
-                        "<ul class=\"list-disc list-inside animated-list\" id=\"rector-hopes\">",
-                        "<li>Discovering new bridges for us in service and outreach</li>",
-                        "<li>Lead us in meaningful service and outreach</li>",
-                        "<li>Strengthen youth and family ministries</li>",
-                        "<li>Deepen our relationship with the Day School</li>",
-                        "<li>Welcome new members and nurture spiritual growth to increase membership</li>",
-                        "<li>Support small groups and ongoing formation</li>",
-                        "<li>Provide compassionate care in all seasons of life</li>",
-                        "<li>Demonstrate strong administrative leadership and staff management skills</li>",
-                        "</ul>"
+                        "<p>We hope to call a leader who embodies Christ's love with humility, compassion, and spiritual depth. Essential gifts include strong pastoral presence, excellent liturgical leadership, and preaching that connects the Gospel to everyday life with warmth and clarity. We value someone who helps newcomers feel truly welcome and who nurtures long-time members with care, especially in seasons of joy, grief, and transition.</p>",
+                        "<p>Some characteristics of our next rector:</p>",
+                        "<ul class='list-disc list-inside animated-list' id='rector-hopes'><li>Discovering new bridges for us in service and outreach</li><li>Lead us in meaningful service and outreach</li><li>Strengthen youth and family ministries</li><li>Deepen our relationship with the Day School</li><li>Welcome new members and nurture spiritual growth to increase membership</li><li>Support small groups and ongoing formation</li><li>Provide compassionate care in all seasons of life</li><li>Demonstrate strong administrative leadership and staff management skills</li></ul>"
                     ]
                 }
             ],
@@ -186,7 +407,7 @@
                         "inclusive community where everyone is invited to encounter God through prayer, sacrament, and fellowship.</p>",
                         "<p>All are welcome at Christ's table. Whether they are new, returning, or seeking, they are invited to join us.</p>",
                         "<p>Weekly Worship Schedule:</p>",
-                        "<ul class=\"list-disc list-inside\">",
+                        "<ul class='list-disc list-inside'>",
                         "<li>Sunday 8:00 am – Holy Eucharist (Rite I)</li>",
                         "<li>Sunday 10:00 am – Holy Eucharist (Rite II, choir & organ)</li>",
                         "<li>Tuesday 8:00 am – Holy Eucharist (Rite II, Day School Chapel)</li>",
@@ -264,10 +485,10 @@
                         "Worship at Christ Church is <i>wiggle-friendly</i>! ",
                         "Families are always welcome to worship together during Sunday services. ",
                         "Children’s worship materials are available in the first pew ",
-                        "<a href=\"assets/youth1.jpeg\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"link\">prayground</a>",
+                        "<a href='assets/youth1.jpeg' target='_blank' rel='noopener noreferrer' class='link'>prayground</a>",
                         " to help engage young hearts and minds.</p> ",
                         "<p>Our youth ministries include:</p>",
-                        "<ul class=\"list-disc list-inside\">",
+                        "<ul class='list-disc list-inside'>",
                         "<li>Weekly Godly Play story circles and Youth Group every other Sunday.</li>",
                         "<li>Participation in diocesan children and youth events nurturing a broader faith community.</li>",
                         "<li>Summer Vacation Bible School.</li>",
@@ -323,52 +544,52 @@
                     "kicker": "Service & Outreach",
                     "heading": "Bridging love and service",
                     "content": [
-                        "<div class=\"flex-content\">",
-                        "<div class=\"flex-1\">",
+                        "<div class='flex-content'>",
+                        "<div class='flex-1'>",
                         "<p>Our Service Ministry helps our parish live an active, visible faith. Meeting monthly, this core group of volunteers ",
                         "plans outreach efforts for the church community. Our parish community not only provides financial support as it offers ",
                         "hands-on opportunities, allowing for involvement in our spiritual call to help others. While some activities are held at ",
-                        "church, others involve heading over the bridge to <a href=\"https://stmarks-cityheights.org/\" target=\"_blank\" ",
-                        "rel=\"noopener noreferrer\" class=\"link\">St. Mark's</a> and <a href=\"https://www.stlukesnorthpark.org/\" ",
-                        "target=\"_blank\" rel=\"noopener noreferrer\" class=\"link\">St. Luke's</a> parishes to provide support for the unhoused and those in need.</p>",
+                        "church, others involve heading over the bridge to <a href='https://stmarks-cityheights.org/' target='_blank' ",
+                        "rel='noopener noreferrer' class='link'>St. Mark's</a> and <a href='https://www.stlukesnorthpark.org/' ",
+                        "target='_blank' rel='noopener noreferrer' class='link'>St. Luke's</a> parishes to provide support for the unhoused and those in need.</p>",
                         "<p>As James 2:17 reminds us, \"faith without works is dead\". Guided by that call, we raise funds for ",
-                        "<a href=\"https://vjkids.org/\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"link\">Vida Joven</a> ",
+                        "<a href='https://vjkids.org/' target='_blank' rel='noopener noreferrer' class='link'>Vida Joven</a> ",
                         "through our annual festive Cinco de Mayo dinner, which provides shelter for orphans in Tijuana and Northern Mexico. ",
                         "The Backpack Drive provides over 200 backpacks filled with school supplies for children, and our Thanksgiving Drive ",
                         "works with Christ Church Day School to collect food and financial donations to provide food for 200 families. ",
-                        "We share the joy of Advent by providing Christmas gifts for the <a href=\"https://episcopalcommunityservices.org/\" ",
-                        "target=\"_blank\" rel=\"noopener noreferrer\" class=\"link\">Episcopal Community Services</a> Head Start programs. ",
+                        "We share the joy of Advent by providing Christmas gifts for the <a href='https://episcopalcommunityservices.org/' ",
+                        "target='_blank' rel='noopener noreferrer' class='link'>Episcopal Community Services</a> Head Start programs. ",
                         "And our Lenten Drive annually supports causes the Service Ministry team identifies to serve those in need. ",
-                        "This year we are assisting <a href=\"https://refugee-net.org/\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"link\">RefugeeNet</a> to send children to summer swim lessons and robotics camp.</p>",
+                        "This year we are assisting <a href='https://refugee-net.org/' target='_blank' rel='noopener noreferrer' class='link'>RefugeeNet</a> to send children to summer swim lessons and robotics camp.</p>",
                         "<p>In recent years, we revived \"Blessings in a Bag\", a tradition of practical care for neighbors experiencing homelessness ",
                         "by equipping parishioners with small gift bags of food and essentials to share with dignity and kindness. ",
                         "Our Thrift Shop, by raising over $100,000 per year, extends this outreach as a community ministry, supported by ",
                         "volunteers and donors beyond our congregation. Ongoing, Christ Church partners with St. Mark's to support their ",
-                        "<a href=\"https://stmarks-cityheights.org/serve/food-pantry/\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"link\">Food Pantry</a>, now serving 400 families weekly.</p>",
+                        "<a href='https://stmarks-cityheights.org/serve/food-pantry/' target='_blank' rel='noopener noreferrer' class='link'>Food Pantry</a>, now serving 400 families weekly.</p>",
                         "</div>",
-                        "<div class=\"flex-1\">",
-                        "<div class=\"video-container\">",
-                        "<video width=\"100%\" height=\"auto\" controls playsinline preload=\"metadata\" poster=\"assets/blessings_in_a_bag-poster.jpg\">",
-                        "<source src=\"assets/blessings_in_a_bag.mp4\" type=\"video/mp4\">",
+                        "<div class='flex-1'>",
+                        "<div class='video-container'>",
+                        "<video width='100%' height='auto' controls playsinline preload='metadata' poster='assets/blessings_in_a_bag-poster.jpg'>",
+                        "<source src='assets/blessings_in_a_bag.mp4' type='video/mp4'>",
                         "Your browser does not support HTML5 video playback.",
                         "</video>",
                         "</div>",
                         "</div>",
                         "</div>",
-                        "<h3 class=\"subheading\">Peace & Justice Committee</h3>",
+                        "<h3 class='subheading'>Peace & Justice Committee</h3>",
                         "<p>Christ Church also has a Peace & Justice Committee. During COVID, parishioners participated in the Episcopal Church's ",
                         "Sacred Ground program, which deepened our commitment to faithful action and honest conversation. From that work, ",
-                        "we sensed a call to engage issues affecting our neighbors, and we joined the <a href=\"https://sdop.org/\" ",
-                        "target=\"_blank\" rel=\"noopener noreferrer\" class=\"link\">San Diego Organizing Project (SDOP)</a>, a non-partisan, ",
+                        "we sensed a call to engage issues affecting our neighbors, and we joined the <a href='https://sdop.org/' ",
+                        "target='_blank' rel='noopener noreferrer' class='link'>San Diego Organizing Project (SDOP)</a>, a non-partisan, ",
                         "multi-faith network. Through listening and discernment, we focused first on housing, homelessness, and ocean pollution, ",
                         "supporting efforts such as renter protections, housing initiatives, and practical support for the unhoused.</p>",
                         "<p>More recently, we have felt a clear call toward immigration and refugee support. We have hosted Home Meetings, ",
                         "participated in forums and rallies, and held discussions on issues including refugee resettlement. ",
-                        "In collaboration with Our Lady of Guadalupe Church and SDOP, we now support the <a href=\"https://sdop.net/faith-accompaniment-ministry\" ",
-                        " target=\"_blank\" rel=\"noopener noreferrer\" class=\"link\">FAITH program (Faithful Accompaniment ",
+                        "In collaboration with Our Lady of Guadalupe Church and SDOP, we now support the <a href='https://sdop.net/faith-accompaniment-ministry' ",
+                        " target='_blank' rel='noopener noreferrer' class='link'>FAITH program (Faithful Accompaniment ",
                         "in Trust & Hope)</a>, offering moral support and prayerful presence for migrants at court hearings and related sites.</p>",
-                        "<div class=\"info-box\">",
-                        "<p>📹 <a href=\"https://www.cbs8.com/article/news/local/san-diego-faith-leaders-community-unite-in-procession-for-immigrant-families-amid-immigration-enforcement/509-a4d8dd0f-f8df-4661-a8e6-97921c9e01e0\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"link\">Watch: Video about immigration at San Diego courthouse (from the KFMB San Diego CBS News 8)</a></p>",
+                        "<div class='info-box'>",
+                        "<p>📹 <a href='https://www.cbs8.com/article/news/local/san-diego-faith-leaders-community-unite-in-procession-for-immigrant-families-amid-immigration-enforcement/509-a4d8dd0f-f8df-4661-a8e6-97921c9e01e0' target='_blank' rel='noopener noreferrer' class='link'>Watch: Video about immigration at San Diego courthouse (from the KFMB San Diego CBS News 8)</a></p>",
                         "</div>"
                     ]
                 }
@@ -395,19 +616,19 @@
                     "kicker": "Christ Church Day School",
                     "heading": "A thriving Episcopal school in the heart of Coronado",
                     "content": [
-                        "<div class=\"flex-content\">",
-                        "<div class=\"flex-1\">",
-                        "<p class=\"cc-sub\"><a href=\"https://www.ccds.org/\" target=\"_blank\" rel=\"noopener\" class=\"link\">Christ Church Day School ",
+                        "<div class='flex-content'>",
+                        "<div class='flex-1'>",
+                        "<p class='cc-sub'><a href='https://www.ccds.org/' target='_blank' rel='noopener' class='link'>Christ Church Day School ",
                         "(CCDS)</a> is a vital mission of Christ Church, serving JK–8th grade with 130 students in small classes. ",
                         "Founded in 1957, CCDS provides quality education grounded in Christian values. ",
-                        "It is accredited by the <a href=\"https://acswasc.org/\" target=\"blank\" rel=\"noopener\" ",
-                        "class=\"link\">Western Association of Schools and Colleges (WASC)</a> and a member of the ",
-                        "<a href=\"https://www.episcopalschools.org/\" target=\"blank\" rel=\"noopener\" ",
-                        "class=\"link\">National Association of Episcopal Schools (NAES)</a></p>",
-                        "<div class=\"stats-grid\">",
-                        "<div class=\"stat-card\"><div class=\"stat-label\">Enrollment</div><div class=\"stat-value\">130 students, JK–8</div></div>",
-                        "<div class=\"stat-card\"><div class=\"stat-label\">Class sizes</div><div class=\"stat-value\">Small (about 14–16)</div></div>",
-                        "<div class=\"stat-card\"><div class=\"stat-label\">Founded</div><div class=\"stat-value\">1957</div></div>",
+                        "It is accredited by the <a href='https://acswasc.org/' target='blank' rel='noopener' ",
+                        "class='link'>Western Association of Schools and Colleges (WASC)</a> and a member of the ",
+                        "<a href='https://www.episcopalschools.org/' target='blank' rel='noopener' ",
+                        "class='link'>National Association of Episcopal Schools (NAES)</a></p>",
+                        "<div class='stats-grid'>",
+                        "<div class='stat-card'><div class='stat-label'>Enrollment</div><div class='stat-value'>130 students, JK–8</div></div>",
+                        "<div class='stat-card'><div class='stat-label'>Class sizes</div><div class='stat-value'>Small (about 14–16)</div></div>",
+                        "<div class='stat-card'><div class='stat-label'>Founded</div><div class='stat-value'>1957</div></div>",
                         "</div>",
                         "<p>Students receive rich specialty programs including Spanish, Music, Physical Education, Art, and Spiritual Nurture. ",
                         "CCDS hosts twice-weekly all-school chapels with Eucharist on Tuesdays and Morning Prayer on Thursdays.</p>",
@@ -415,15 +636,15 @@
                         "movie nights on the lawn, music and talent performances, family nights, pet blessings, Scholastic Book Fairs, ",
                         "and end-of-year celebrations. The school partners frequently with the church on service projects, ",
                         "including our annual Spaghetti Dinner and Thanksgiving Food Drive.</p>",
-                        "<p>Learn more at <a class=\"underline link\" href=\"https://www.ccds.org/\" target=\"_blank\" rel=\"noreferrer\">ccds.org</a>.</p>",
+                        "<p>Learn more at <a class='underline link' href='https://www.ccds.org/' target='_blank' rel='noreferrer'>ccds.org</a>.</p>",
                         "</div>",
-                        "<div class=\"flex-1\">",
-                        "<div class=\"video-container\">",
-                        "<iframe src=\"https://www.loom.com/embed/d249c4f5d8234bff85f5cc086f0fffa6\" frameborder=\"0\" allowfullscreen style=\"width:100%;height:auto;min-height:400px;\"></iframe>",
+                        "<div class='flex-1'>",
+                        "<div class='video-container'>",
+                        "<iframe src='https://www.loom.com/embed/d249c4f5d8234bff85f5cc086f0fffa6' frameborder='0' allowfullscreen style='width:100%;height:auto;min-height:400px;'></iframe>",
                         "</div>",
                         "</div>",
                         "</div>",
-                        "<img src=\"assets/why_ccds.png\" alt=\"Why Christ Church Day School?\" class=\"ccds-featured-image\" />"
+                        "<img src='assets/why_ccds.png' alt='Why Christ Church Day School?' class='ccds-featured-image' />"
                     ]
                 }
             ],
@@ -473,30 +694,30 @@
                     "kicker": "Thrift Shop",
                     "heading": "Joining God's work in the world",
                     "content": [
-                        "<div class=\"flex-content\">",
-                        "<div class=\"flex-1\">",
+                        "<div class='flex-content'>",
+                        "<div class='flex-1'>",
                         "<p>One of the most significant and impactful ministries of Christ Church is our Thrift Shop. ",
                         "In operation for over 75 years, it is managed and staffed entirely by nearly 50 volunteers from ",
                         "Christ Church and the surrounding community. All proceeds support a wide range of parish activities ",
                         "and outreach efforts at the diocesan, national, and international levels. In 2025 alone, over $100,000 ",
-                        "in funds were provided to worthwhile ministries, including <a href=\"https://ccds.org\" ",
-                        "target=\"_blank\" rel=\"noopener noreferrer\" class=\"link\">Christ Church Day School</a>, the ",
-                        "<a href=\"https://sandiegofoodbank.org/\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"link\">San Diego Food Bank</a>, ",
-                        "<a href=\"https://wck.org/\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"link\">World Central Kitchen</a>, ",
-                        "<a href=\"https://pawsofcoronado.org/\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"link\">PAWS</a> ",
-                        "(our local animal welfare group), <a href=\"https://vjkids.org/\" target=\"_blank\" rel=\"noopener noreferrer\" ",
-                        "class=\"link\">Vida Joven</a> (a foundation that supports orphanages in Mexico), <a href=\"https://refugee-net.org/\" ",
-                        "target=\"_blank\" rel=\"noopener noreferrer\" class=\"link\">The Episcopal Refugee Network</a>, and various other projects ",
-                        "of <a href=\"https://edsd.org/\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"link\">The Episcopal Diocese of San Diego</a>.</p>",
+                        "in funds were provided to worthwhile ministries, including <a href='https://ccds.org' ",
+                        "target='_blank' rel='noopener noreferrer' class='link'>Christ Church Day School</a>, the ",
+                        "<a href='https://sandiegofoodbank.org/' target='_blank' rel='noopener noreferrer' class='link'>San Diego Food Bank</a>, ",
+                        "<a href='https://wck.org/' target='_blank' rel='noopener noreferrer' class='link'>World Central Kitchen</a>, ",
+                        "<a href='https://pawsofcoronado.org/' target='_blank' rel='noopener noreferrer' class='link'>PAWS</a> ",
+                        "(our local animal welfare group), <a href='https://vjkids.org/' target='_blank' rel='noopener noreferrer' ",
+                        "class='link'>Vida Joven</a> (a foundation that supports orphanages in Mexico), <a href='https://refugee-net.org/' ",
+                        "target='_blank' rel='noopener noreferrer' class='link'>The Episcopal Refugee Network</a>, and various other projects ",
+                        "of <a href='https://edsd.org/' target='_blank' rel='noopener noreferrer' class='link'>The Episcopal Diocese of San Diego</a>.</p>",
                         "<p>Beyond its vital financial outreach, the Thrift Shop provides help to low-income families by offering quality merchandise at ",
                         "very low cost. It also creates fellowship for volunteers and shoppers who've developed relationships over the years. The shop ",
                         "is open for sales and donations on Tuesday through Saturday, 10 am to 1 pm.</p>",
                         "<p>The Thrift Shop embodies our call to service in tangible, practical ways, connecting commerce with compassion and stewardship with generosity.</p>",
                         "</div>",
-                        "<div class=\"flex-1\">",
-                        "<div class=\"video-container\">",
-                        "<video width=\"100%\" height=\"auto\" controls playsinline preload=\"metadata\" poster=\"assets/thrift_shop_christmas-poster.jpg\">",
-                        "<source src=\"assets/thrift_shop_christmas.mp4\" type=\"video/mp4\">",
+                        "<div class='flex-1'>",
+                        "<div class='video-container'>",
+                        "<video width='100%' height='auto' controls playsinline preload='metadata' poster='assets/thrift_shop_christmas-poster.jpg'>",
+                        "<source src='assets/thrift_shop_christmas.mp4' type='video/mp4'>",
                         "Your browser does not support HTML5 video playback.",
                         "</video>",
                         "</div>",
@@ -523,9 +744,9 @@
                     "kicker": "Music Ministry",
                     "heading": "Music at Christ Church",
                     "content": [
-                        "<div class=\"flex-content\">",
-                        "<div class=\"flex-1\">",
-                        "<p class=\"cc-sub\">For centuries, music has been closely connected with faith ",
+                        "<div class='flex-content'>",
+                        "<div class='flex-1'>",
+                        "<p class='cc-sub'>For centuries, music has been closely connected with faith ",
                         "and worship. At Christ Church, singing, hymns, and the organ continue this long ",
                         "tradition of Anglican worship, inviting everyone to take part. Music has a unique ",
                         "power: it lifts the words of the liturgy, highlights important moments in the ",
@@ -533,16 +754,16 @@
                         "Through psalms, hymns, and choral music, the congregation shares in prayer and ",
                         "praise together.</p>",
                         "</div>",
-                        "<div class=\"flex-1\">",
-                        "<div class=\"video-container\">",
-                        "<video width=\"100%\" height=\"auto\" controls playsinline preload=\"metadata\">",
-                        "<source src=\"assets/Song1-1.mp4\" type=\"video/mp4\">",
+                        "<div class='flex-1'>",
+                        "<div class='video-container'>",
+                        "<video width='100%' height='auto' controls playsinline preload='metadata'>",
+                        "<source src='assets/Song1-1.mp4' type='video/mp4'>",
                         "Your browser does not support HTML5 video playback.",
                         "</video>",
                         "</div>",
                         "</div>",
                         "</div>",
-                        "<p class=\"cc-sub\">Music also draws people together. When voices join in song, ",
+                        "<p class='cc-sub'>Music also draws people together. When voices join in song, ",
                         "a sense of unity and encouragement is created, strengthening both the community ",
                         "and the faith of each individual. Sacred music expresses the wide range of ",
                         "emotions found in worship—joy, sorrow, thanksgiving, and hope—and offers a way ",
@@ -582,7 +803,7 @@
                     "heading": "A home for our rector",
                     "content": [
                         "<p>Christ Church Coronado is blessed to own a rectory available for the rector and their family. The rectory is a spacious two-story home featuring three bedrooms, a living room, den, dining room, an updated kitchen, a garage, and a comfortable patio area in the backyard.</p>",
-                        "<p>Located approximately <a href=\"https://maps.app.goo.gl/MBnDYn73p7P8xnJX6\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"link\">seven blocks from the church</a>, the home is close enough for a pleasant walk or an easy bike ride to the parish campus. This convenient proximity allows for easy accessibility to parish activities and ministries while providing a peaceful residential setting for our rector and their family.</p>",
+                        "<p>Located approximately <a href='https://maps.app.goo.gl/MBnDYn73p7P8xnJX6' target='_blank' rel='noopener noreferrer' class='link'>seven blocks from the church</a>, the home is close enough for a pleasant walk or an easy bike ride to the parish campus. This convenient proximity allows for easy accessibility to parish activities and ministries while providing a peaceful residential setting for our rector and their family.</p>",
                         "<p>The Rectory at Christ Church Coronado serves as more than just a residence—it is a place where our spiritual leader lives, serves, and builds meaningful relationships with our parish community. From pastoral visits and counseling to hosting parish gatherings and welcoming visitors, the Rectory is central to the life and ministry of Christ Church.</p>",
                         "<p>We invite our next rector to make this home their own, and to use it as a base from which to shepherd our flock, nurture our faith community, and continue the rich tradition of Christ Church Coronado.</p>"
                     ]
@@ -675,11 +896,25 @@
             "title": "Formation and belonging"
         },
         {
+            "href": "#day_school",
+            "image": "assets/ccds6.jpg",
+            "alt": "Christ Church Day School",
+            "category": "Day School",
+            "title": "An Episcopal School for JK–8"
+        },
+        {
             "href": "#service_ministry",
             "image": "assets/hero_service.jpg",
-            "alt": "Service",
+            "alt": "Service Ministry",
             "category": "Service",
             "title": "Bridging love & service"
+        },
+        {
+            "href": "#music_ministry",
+            "image": "assets/hero_music.jpg",
+            "alt": "Music Ministry",
+            "category": "Music Ministry",
+            "title": "Sacred music for worship"
         },
         {
             "href": "#thrift_shop",
@@ -687,13 +922,6 @@
             "alt": "Thrift Shop",
             "category": "Thrift Shop",
             "title": "A ministry with impact"
-        },
-        {
-            "href": "#day_school",
-            "image": "assets/ccds6.jpg",
-            "alt": "Christ Church Day School",
-            "category": "Day School",
-            "title": "JK–8 • 130 students"
         },
         {
             "href": "#rectory",
