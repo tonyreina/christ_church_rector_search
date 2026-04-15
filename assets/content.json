@@ -687,7 +687,7 @@
             "title": "Thrift Shop",
             "metaTitle": "Thrift Shop • Rector Search",
             "description": "Christ Church Thrift Shop has served Coronado for 70+ years, raising over $100,000 annually for parish ministries and outreach.",
-            "heroImage": "assets/thrift_shoppers.jpg",
+            "heroImage": "assets/thrift2.jpg",
             "heroAlt": "Christ Church Thrift Shop",
             "sections": [
                 {
@@ -730,6 +730,22 @@
                 {
                     "src": "assets/hero_thrift_sign.jpg",
                     "alt": "Thrift Shop sign"
+                },
+                {
+                    "src": "assets/thrift1.jpg",
+                    "alt": "Thrift Shop"
+                },
+                {
+                    "src": "assets/thrift2.jpg",
+                    "alt": "Thrift Shop"
+                },
+                {
+                    "src": "assets/thrift4.jpg",
+                    "alt": "Thrift Shop"
+                },
+                {
+                    "src": "assets/thrift5.jpg",
+                    "alt": "Thrift Shop"
                 }
             ]
         },
@@ -918,7 +934,7 @@
         },
         {
             "href": "#thrift_shop",
-            "image": "assets/hero_thrift.jpg",
+            "image": "assets/thrift2.jpg",
             "alt": "Thrift Shop",
             "category": "Thrift Shop",
             "title": "A ministry with impact"
